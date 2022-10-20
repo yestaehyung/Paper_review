@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "46f0f9e6ea300cd1",
@@ -161,8 +160,8 @@
   "active": "bf87eb9acff031d0",
   "lastOpenFiles": [
     "Paper_review/논문 리뷰/Personalized Fashion Recommendation from Personal Social Media Data- An Item-to-Set Metric Learning Approach.md",
-    "데사프/20221020.md",
-    "창업/20221019.md",
+    "22_fall/Data_science_project/20221020.md",
+    "MOS/20221019.md",
     "무제파일.md",
     "연구/무제파일.md"
   ]
