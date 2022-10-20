@@ -72,3 +72,7 @@ Lookbook.nu라는 outfit과 selfie를 올리는 fashion focused website에서 sn
 
 muti-modal한 user activities는 personal preferences를 보여준다.
 Fashion information을 뽑기 위해서 fashion item embedding module을 사용하였다.
+
+![](https://i.imgur.com/fab02Kp.png)
+
+위 그림은 image-hashtag-title triplets에서 fashion 정보를 뽑아내는 방법이다. 
