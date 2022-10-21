@@ -113,6 +113,7 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 		- 마지막으로 2-layer MLP가 모든 feature을 concat한다. 
 ## Item-to-set Metric  Learning 
 
+사용자의 selfie posts -> S = {<sub>1</sub>, ... , <sub>k</sub>} 
 
 
 
