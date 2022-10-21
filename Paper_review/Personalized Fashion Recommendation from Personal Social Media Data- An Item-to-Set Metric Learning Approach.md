@@ -141,6 +141,7 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 		- Item-to-Set distance는 아래와 같음
 			- ![|200](https://i.imgur.com/kyXJs2k.png)
 			- 다중 분류에 사용되는 sigmoid
+		- ![|100](https://i.imgur.com/MoMGeQK.png) 는 constant value 거나 ![|100](https://i.imgur.com/X9fZFVY.png) 이다. 
 1. Importance Estimation
 2. User-specific Metric Space
 
