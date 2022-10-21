@@ -143,7 +143,18 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 			- 다중 분류에 사용되는 sigmoid
 		- ![|100](https://i.imgur.com/MoMGeQK.png) 는 constant value 거나 ![|100](https://i.imgur.com/X9fZFVY.png) 이다. 
 1. Importance Estimation
-2. User-specific Metric Space
+	- neighboring importance weight를 고려
+		- ![|200](https://i.imgur.com/EGzJZgc.png)
+		- ![|25](https://i.imgur.com/DVYhNzV.png) 는 learnable parameter 이고, 모든 아이템을 활용하는 것과 가장 가까운 아이템 간의 균형을 맞추기 위해 데이터로부터 학습된다.
+	- neighboring importance는 user의 multiple interests를 반영하는 가장 가까운 item에 많은 weight를 부여한다. 
+	- 가장 가까운 한개만 고려하는 nearest neighbor 달리 위 방법은 모든 아이템의 feature를 update할 수 있다. 
+	- 잘못된 parsing, missing modalities... 때문에 set S에 noise가 있을 수 있고 이를 해결하기 위해 distance를 계산할 때 *intra-set importtance weight* 을 고려하였다. 
+		- ![|200](https://i.imgur.com/JdC8shJ.png)
+		- 
+
+
+
+1. User-specific Metric Space
 
 
 
