@@ -113,7 +113,32 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 		- 마지막으로 2-layer MLP가 모든 feature을 concat한다. 
 ## Item-to-set Metric  Learning 
 
-사용자의 selfie posts -> S = {<sub>1</sub>, ... , <sub>k</sub>} 
+사용자의 selfie posts -> S = {<sub>1</sub>, ... , <sub>k</sub>} 에서 similar 측정
+
+1. Item-to-set Similarity Metric
+	- Metric learning 은 two item간의 similarity를 학습하기 위한 것이다. 
+	- 이전 metric learning의 접근은 two item i와 j의 feature points *i*, *j* 간의 point-wise distance *d(i, j)* 를 사용하여 두 아이템간의 유사도를 측정함
+		- *d(i, j)* 는 *l*<sub>2</sub>  거리를 사용하여 계산
+	- Item-to-set metric은 초개인화 추천을 위해 개인의 selfie에서 얼마나 비슷한 outfit 후보를 찾아서 계산하는 것이다.
+	- 본 논문에서는 두개의 item-to-set metric의 약점에 대해 설명한 후 어떻게 사용하였는지 설명한다.
+		- averaged item-to-set distance
+			- Set에 있는 모든 item들과 item *f* 간의 거리 평균을 계산하는 방법
+			- ![|200](https://i.imgur.com/EKLqdJ0.png)
+			- 저자들이 주목하는 것은 아이템간 거리 평균 = 아이템의 feature 평균 후 거리 계산
+				- 이 때 가정은 거리 계산 알고리즘이  *l*<sub>2</sub>  거리 라는 것 
+				- 다른 few-shot learning 에서도 아이템 feature 간 평균 해서 거리 구한 적이 있다.
+		- nearest-neighbor item-to-set distance
+			- Set에 있는 모든 아이템과 query  아이템 *f* 의 가장 짧은 거리 고려 
+			- ![|200](https://i.imgur.com/jr7fgYB.png)
+			- ![|200](https://i.imgur.com/DiOzOE0.png)
+		- 이 두개의 거리 측정 방법 모두 drawback 이 있다. 
+			- average distance -> S 가 여러개의 패션 스타일을 포함하고 있을 때 similartiy 계산을 하기 힘들다
+			- nearest-neighbor -> 여러개의 패션 스타일에 더 적용하기 쉽지만, minimum 계산은 outliers와 noise에 취약하다. + 학습 동안 가장 가까운 item에만 feature를 업데이트 한다.
+		- 본 논문에서는 generalized item-to-set distance을 사용
+		- set S 와 query *f* 가 있을 때 *w*<sub>i</sub> (importance weight)를 각 set의 item <sub>i</sub> 에 할당 
+
+1. Importance Estimation
+2. User-specific Metric Space
 
 
 
