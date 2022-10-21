@@ -136,7 +136,11 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 			- nearest-neighbor -> 여러개의 패션 스타일에 더 적용하기 쉽지만, minimum 계산은 outliers와 noise에 취약하다. + 학습 동안 가장 가까운 item에만 feature를 업데이트 한다.
 		- 본 논문에서는 generalized item-to-set distance을 사용
 		- set S 와 query *f* 가 있을 때 *w*<sub>i</sub> (importance weight)를 각 set의 item <sub>i</sub> 에 할당 
-
+			- feature averaging과 distance computation 전에 할당
+			- importance weight 은 importance estimator ![|100](https://i.imgur.com/MoMGeQK.png) 를 계산하는 데 사용된다. 
+		- Item-to-Set distance는 아래와 같음
+			- ![|200](https://i.imgur.com/kyXJs2k.png)
+			- 
 1. Importance Estimation
 2. User-specific Metric Space
 
