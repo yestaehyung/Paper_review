@@ -76,3 +76,46 @@ Fashion information을 뽑기 위해서 fashion item embedding module을 사용�
 ![](https://i.imgur.com/fab02Kp.png)
 
 위 그림은 image-hashtag-title triplets에서 fashion 정보를 뽑아내는 방법이다. 
+x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 triplets
+
+1. Image Feature Extraction
+	- Image inputs -> x<sub>im</sub> 은 outfit combination과 선호하는 appearene를 보여줌 
+	- [body parsing model](https://arxiv.org/pdf/1804.01984.pdf)을 사용하여 11개의 garment regions를 뽑아냄 
+		- 사용하는 regions는 dress, coat, pant, skirt룰 사용
+		- 사용하지 않은 것은 face, hair, background, socks sunglasses 등
+	- [pre-trained image recognition model](https://arxiv.org/pdf/1409.1556.pdf) 사용 (VGG-19)하여 visual information을 각 garment region에 대해 추출
+	- VGG 모델의 conv1, conv2의 결과를 계산, 각 garment region으로 평균을 낸다. 
+	- 모든 garment regions의 feature을 concate함
+	- 결과적으로 2112 차원의 특징 vector 를 얻게되었다.
+1. Hashtag Feature Extraction
+	- x<sup>(h)</sup> = {1<sup>(h)</sup>, ... , m<sup>(h)</sup>}의 word embedding으로 구성되어 있다. 
+	- 만약 hashtag가 없는 경우 zero vector가 사용된다.
+	- 다른 단어가 같은 fashion style을 나타낼 수도 있음 
+		- e.g., corset, leatherjacket, black 이라는 단어는 모두 goth style을 나타냄
+	- 위와 같은 이유 때문에 MLP를 구현하여 일반 word embedding에서 fashion-related embedding으로 변환하였다.
+	- 이미지처럼 고정된 길이의 feature을 뽑기 위해서 attentive averaging operation을 사용
+		- hashtag의 embedding feature의 길이가 매우 다양하기 때문!
+		- ![](https://i.imgur.com/H0kL19b.png)
+		- <sup>(h)</sup>는 hashtag feature로 사용됨
+1. Title Feature Extraction
+	- x<sup>(t)</sup> = {1<sup>(t)</sup>, ... , m<sup>(t)</sup>}의 word embedding 으로 구성
+	- hashtag과 같은 방법을 사용하여 <sup>(t)</sup>를 feature로 사용 
+3. Cross-modality Gated Fusion
+	- featre의 quality를 높이기 위해 fusion을 사용하였다. 
+	- title과 hashtag이 image와의 차이점은 덜 noisy하고 semntic info를 보완할 수 있다는 것이다. 
+	- 그래서 일단 title과 hashtag를 아래와 같이 cross-gating한다.
+		- ![](https://i.imgur.com/h4VUfsM.png)
+		- ![|100](https://i.imgur.com/yKXofzO.png)
+		- 위 그림을 보고 이해하면 될 것 같다. 
+		- 만약 비슷한 패션의 경우 crossed-filtered feature는 low-level image feature를 걸러내는데 사용할 수 있다
+		- image의 경우 아래와 같다.
+			- ![|200](https://i.imgur.com/OfrUwuj.png)
+		- 마지막으로 2-layer MLP가 모든 feature을 concat한다. 
+## Item-to-set Metric  Learning 
+
+
+
+
+
+
+
