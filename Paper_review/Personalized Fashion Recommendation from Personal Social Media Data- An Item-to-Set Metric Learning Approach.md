@@ -140,7 +140,7 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 			- importance weight 은 importance estimator ![|100](https://i.imgur.com/MoMGeQK.png) 를 계산하는 데 사용된다. 
 		- Item-to-Set distance는 아래와 같음
 			- ![|200](https://i.imgur.com/kyXJs2k.png)
-			- 
+			- 다중 분류에 사용되는 sigmoid
 1. Importance Estimation
 2. User-specific Metric Space
 
