@@ -31,7 +31,8 @@ selfe post 들의 fine-grained supervision 없이 본 논문에서는 개인화�
 추가적으로 user specific item-to-set metric을 구현
 -> 요거는 다른 유저는 fashion product의 다른 aspect에 집중한다는 것에 motivate됨
 
-결과적으로 더 targeted fashion recommendation을 하기 위해 user 의 selfie post set에 의존할 수 밖에 없고 이를 위해 유사도를 계산하기 전에 
+결과적으로 더 targeted fashion recommendation을 하기 위해 user 의 selfie post set에 의존할 수 밖에 없고 이를 위해 유사도를 계산하기 전에 post set을 사용자별 공간으로 변환하는 embedding module을 제안함.
+사용자의 selfie set으로부터 fashion preference를 얻기 위해서는 raw fashion image와 그것을 설명하는 text를 잘 이해애햐함 + 거기에 두 data를 잘 fusing 해야함 
 # Related works
 ## Fashion Annotation
 - 패션 요소를 태깅하여 자동 패션 분석을 용이하게 하게 위해 수행하는 task
