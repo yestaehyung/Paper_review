@@ -14,6 +14,7 @@ selfe post 들의 fine-grained supervision 없이 본 논문에서는 개인화�
 
 그래서 item-to-set metric을 사용하여 set과 item 간의 개인화된 유사도를 측정한다. set과 user의 Item간의 거리는 가깝게, set과 다른 유저들의 item간은 멀게 학습하게 된다. 
 
+
 ## Metric learning
 
 이전 연구에서 metric learning을 많이 사용해왔다. 그런데 item-to-set을 할 때는 큰 challenge가 있다. 
@@ -21,7 +22,16 @@ selfe post 들의 fine-grained supervision 없이 본 논문에서는 개인화�
 그래서 item-to-set similarity는 단순히 multiple item-wise similarity로 계산하기 힘들다.
 이에 대안으로 nearest-neighbor item-to-set metric은 noise와 outlier에 영향을 받기 쉽다.
 
-위와 같은 문제를 해결하기 위해 본 논문에서는 새롭고 일반화된 item-to-set metric을 제안한다. 특히 각 set의 item에 importance weight를 각 item당 계산하여 
+위와 같은 문제를 해결하기 위해 본 논문에서는 새롭고 일반화된 item-to-set metric을 제안한다. 특히 각 set의 item에 importance weight을 계산하여 outliers와 unrelated를 filtering한다. 또한 가장 가까운 것만 update하는 nearest-neighbor과 달리 전체 item을 업데이트한다. 
+두가지 원리를 고려하는데 
+- neighboring importance
+	- 새로운 item과 먼 set 내의 item을 걸러내는 역할 
+- intra-set importance 
+	- set 내부의 noise와 outlier를 걸러내는 역할
+추가적으로 user specific item-to-set metric을 구현
+-> 요거는 다른 유저는 fashion product의 다른 aspect에 집중한다는 것에 motivate됨
+
+결과적으로 더 targeted fashion recommendation을 하기 위해 user 의 selfie post set에 의존할 수 밖에 없고 이를 위해 유사도를 계산하기 전에 
 # Related works
 ## Fashion Annotation
 - 패션 요소를 태깅하여 자동 패션 분석을 용이하게 하게 위해 수행하는 task
