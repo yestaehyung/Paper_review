@@ -16,7 +16,12 @@ selfe post 들의 fine-grained supervision 없이 본 논문에서는 개인화�
 
 ## Metric learning
 
+이전 연구에서 metric learning을 많이 사용해왔다. 그런데 item-to-set을 할 때는 큰 challenge가 있다. 
+실제로 user는 한개가 아닌 다양한 fashion style에 관심을 가질 확률이 높다.
+그래서 item-to-set similarity는 단순히 multiple item-wise similarity로 계산하기 힘들다.
+이에 대안으로 nearest-neighbor item-to-set metric은 noise와 outlier에 영향을 받기 쉽다.
 
+위와 같은 문제를 해결하기 위해 본 논문에서는 새롭고 일반화된 item-to-set metric을 제안한다. 특히 각 set의 item에 importance weight를 각 item당 계산하여 
 # Related works
 ## Fashion Annotation
 - 패션 요소를 태깅하여 자동 패션 분석을 용이하게 하게 위해 수행하는 task
