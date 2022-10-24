@@ -178,7 +178,13 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 	- ![|200](https://i.imgur.com/IJDpYgg.png)
 	- Scaling vector (S)를 계산, 이 vector는 각 feature 차원의 scaling factor를 의미 
 	- t 는 softmax를 의미하는 것 같음 -> sigmoid 대신에 softmax를 사용한 이유는 softmax가 weights의 합을 1로 만들어주어서 추천의 정확도를 조금 더 높혀주었기 때문
-	- 
+	- ![|300](https://i.imgur.com/Zn3IkMu.png)
+	- 내가 이해한 위 공식 -> 
+	
+![|600](https://i.imgur.com/yrMKZ6R.png)
+
+
+
 
 
 
