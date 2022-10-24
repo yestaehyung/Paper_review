@@ -166,11 +166,21 @@ x = (x<sup>(im)</sup>, x<sup>(h)</sup>, x<sup>(t)</sup>) -> 이런 형식의 tri
 	- 가장 가까운 한개만 고려하는 nearest neighbor 달리 위 방법은 모든 아이템의 feature를 update할 수 있다. 
 	- 잘못된 parsing, missing modalities... 때문에 set S에 noise가 있을 수 있고 이를 해결하기 위해 distance를 계산할 때 *intra-set importtance weight* 을 고려하였다. 
 		- ![|200](https://i.imgur.com/JdC8shJ.png)
-		- 
-
-
-
+		- v 의 output은 input vector의 scalar output 이다.
+		- stat(S) 는 모든 feature 차원의 통계 vector이다. 
+		- item과 stat을 비교하면서 outlier를 제거하게 된다. 
+	- Importance estimator
+		- Neighboring importance + intra-set-importance 를 선형 결합한 공식
+		- outlier를 제거할 뿐만 아니라 전체 item을 업데이트하면서 학습이 가능하다. 
 1. User-specific Metric Space
+	- User 마다 패션 아이템에 다른 면을 보고 선호할 수 있기 때문에 item-to-set은 user 마다 각각 달라야함
+	- User specific space transform 을 distance 계산 전에 수행함
+	- ![|200](https://i.imgur.com/IJDpYgg.png)
+	- Scaling vector (S)를 계산, 이 vector는 각 feature 차원의 scaling factor를 의미 
+	- t 는 softmax를 의미하는 것 같음 -> sigmoid 대신에 softmax를 사용한 이유는 softmax가 weights의 합을 1로 만들어주어서 추천의 정확도를 조금 더 높혀주었기 때문
+	- 
+
+
 
 
 
