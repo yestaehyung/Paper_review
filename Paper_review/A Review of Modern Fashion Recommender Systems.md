@@ -18,4 +18,29 @@ Localizing fashion items, determining their category and attributes, establishin
 
 ## Personalization and fit
 
-추천하는 패션 제품은 장소, 계정
+추천하는 패션 제품은 장소, 계절, 행사, 문화적, 사회적 배경에 따라 달라진다. 이러한 요소를 발견하는 것이 어렵다. 요즘 연구는 대규모 SNS 데이터에서 이러한 요소를 뽑아내려고 한다. 
+체형 또한 스타일 선택에 영향을 줄 수 있다. 
+
+## Interepretability and Explanation
+
+패션 추천 시스템을 사람들에게 설명할 수 있게 배치하면, 사용자의 신뢰를 높이고 쇼핑 환경을 높일 수 있다.
+
+## Dsicovering Trends 
+
+소비자의 선호도를 예측할 수 있는 능력이 중요하다. 여기서도 소셜 미디어를 활용하여 연구를 진행한다. 
+
+
+
+![](https://i.imgur.com/JVGg6hP.png)
+
+# Categorization based on task
+
+## Fashion item recommendation
+
+사용자의 선호에 맞는 individual fashon items을 추천하는하는 것에 집중
+
+![](https://i.imgur.com/wE59frv.png)
+
+가장 간단한 CF(collaborative filtering) model은 BPR-MF 이고, 많은 모델 기반이 된다.
+
+BPR -
