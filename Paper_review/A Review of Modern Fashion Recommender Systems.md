@@ -52,4 +52,11 @@ Fashion outfits은 같이 입은 N개 item의 집합,
 
 ![](https://i.imgur.com/mJ7eeIg.png)
 
-s -> outfit utility function 
+s -> outfit utility function, item들끼리의 조합이 얼마나 잘어울리는지 계산하는 function
+FITB, outfit compatibility score prediction으로 주로 평가를 한다.
+이러한 function을 계산할 때 도메인 정보를 활용할 수도 있다. 
+
+fashion item을 추천하거나 outfit을 추천할 때 아래와 같은 어려움이 있다.
+
+### Personalizing to a target customer
+	
