@@ -43,4 +43,13 @@ Localizing fashion items, determining their category and attributes, establishin
 
 가장 간단한 CF(collaborative filtering) model은 BPR-MF 이고, 많은 모델 기반이 된다.
 
-BPR -
+BPR - 클릭 이나 구매와 같은 implicit-feedback 하에서 추천 문제를 다룬다. 추천은 user가 선호할만한 item 목록을 예측하는 것을 의미함, 이 논문은 베이지안 추론에 기반한 최적화 기법을 제공하여, item에 대한 선호 강도를 반영할 수 있또록 함,  [정리바로가기](https://leehyejin91.github.io/post-bpr/) (추후에 정리 예정)
+
+## Fashion pair and outfit recommendation
+
+Fashion outfits은 같이 입은 N개 item의 집합,
+온라인 fashion store의 일반적인 outfits 은 different categories로 구성되어 있다.
+
+![](https://i.imgur.com/mJ7eeIg.png)
+
+s -> outfit utility function 
