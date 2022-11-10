@@ -72,3 +72,6 @@ LSTM과 같은 sequence model을 활용하여 outfit을 item의 sequence 로 접
 
 ### Content-based versus collaborative filtering
 
+패션 아이템 추천 task는 visual이나 text 정보를 포함할수도 있고 안할수도 있는 CF 방법론이 대부분
+outfit 추천과 같은 경우는 content based로 주로 접근이 되어 왔다. -> visual metric learning 과 같은 방식
+근데 이런 content based로 접근을 한 이유는 outfit data에 대한 부족이란 것이 있음 
