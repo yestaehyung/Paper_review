@@ -45,7 +45,8 @@ Localizing fashion items, determining their category and attributes, establishin
 
 BPR - 클릭 이나 구매와 같은 implicit-feedback 하에서 추천 문제를 다룬다. 추천은 user가 선호할만한 item 목록을 예측하는 것을 의미함, 이 논문은 베이지안 추론에 기반한 최적화 기법을 제공하여, item에 대한 선호 강도를 반영할 수 있또록 함,  [정리바로가기](https://leehyejin91.github.io/post-bpr/) (추후에 정리 예정)
 
-## Fashion pair and outfit recommendation
+**2.1 에서 fashion recommender system을 categorize하고 
+2.2 에서 task input data를 확인**outfit recommendation
 
 Fashion outfits은 같이 입은 N개 item의 집합,
 온라인 fashion store의 일반적인 outfits 은 different categories로 구성되어 있다.
@@ -59,4 +60,15 @@ FITB, outfit compatibility score prediction으로 주로 평가를 한다.
 fashion item을 추천하거나 outfit을 추천할 때 아래와 같은 어려움이 있다.
 
 ### Personalizing to a target customer
-	
+
+개인화된 의상 모델을 학습하는데 데이터가 충분하지 않다.
+이러한 문제를 해결하기 위해서 fashion generation, graph-learning, binary codes, self attention과 같은 방법을 사용하고 있다.
+
+### Modeling outfits as a sequence
+
+LSTM과 같은 sequence model을 활용하여 outfit을 item의 sequence 로 접근
+**본 논문에서는 text 쿼리, image 쿼리를 허용해서 문제를 일반화 할 수있다고 함.
+만약에 쿼리가 image인 경우 visual retreival or contextual recommendation이 될 수 있다고 한다**
+
+### Content-based versus collaborative filtering
+
