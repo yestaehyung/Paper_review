@@ -21,5 +21,17 @@ VLP framework(massive image-text pair)
 InfoNCE loss?
 	---
 
-TCL 은 CMA, IMC, 
+TCL 은 CMA, IMC, LMI의 세 contrastive module을 사용한다. 
+Specifically, 
+	i) CMA pulls the embeddings of matched image-text pairs together while pushing those of non-matched pairs apart by maximizing global MI between matched image and text; 
+	ii) complementary to CMA, IMC maximizes agreement between differently augmented views of the same data example through maximizing their global MI; 
+	iii) LMI encourages high MI between the global representation and every local region (e.g., image patches and text tokens) of the input, which is designed to remedy the side-effects that are introduced by the global MI maximization.
+
+### VLP
+	CLIP -> 어떤 text가 어떤 image와 일치하는지 예측
+	ALIGN -> CLIP에서 추가적으로 noisy한 데이터를 활용(10개의 image-text pair)
+	그러나 CLIP과 ALIGN은 vision-based downstream task에 맞게 디자인 되어있다. 
+	VQA와 같은 vision+language task를 위해서 OSCAR, UNIMO, VILLA, UNITER는 faster r-cnn과 같은 object detection 모델을 먼저 사용해서 vision feature를 잡고, multi-layer transformer 를 적용해서 vision feature과 text feature를 concat한다.
+	
+	
 
