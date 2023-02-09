@@ -17,4 +17,10 @@
 만족은 novelty에 부정적으로 의존한다는 것을, diversity에 긍정적으로 의존한다는 것을 확인하였다.
 우리는 또한 사용자의 추천 선호에 대한 주관적인 인식을 비교하였다. 
 
-how do users perceive the outputs from various recommender algorithms to be different, and how those differences affect their choice of algorithm 
+어떻게 다른 추천 알고리즘에서 나오는 결과가 사용자에 따라 다르게 인식하는지
+이 다름이 알고리즘을 선택하는데 어떤 영향을 주는 것인지
+
+일반적으로 다르게 인식하는 것을 어느정도 인식하고 있었다, 일단은 정확도의 관점에서 
+
+영화 도메인에서 이런 다른 점을 확인하기 위해, 다른 CF algo 에서 사용자의 인식의 주관으로 다르다는 것, 이 다른이 추천 시스템의 선택에 어떤 영향을 미치는지 유저 스터디를 수행하였다. 
+
