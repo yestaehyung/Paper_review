@@ -50,5 +50,7 @@ Specifically,
 	OSCAR는 faster r-cnn을 사용한다.
 	ViLT?(확인해 보아야하는 논문)
 	ALBEF 가 이전에 있는 것들을 합친 느낌?
-	- 
+	- ITC를 적용, MOCO에서 영감을 받아서 negative pair를 생성, momentum??
+	- 모멘텀을 사용하는 이유 -> positive pair 가 진짜 맞나? 네거티브라고 할 수 있나? 
+	- MI?? -> 
 
