@@ -33,5 +33,22 @@ Specifically,
 	그러나 CLIP과 ALIGN은 vision-based downstream task에 맞게 디자인 되어있다. 
 	VQA와 같은 vision+language task를 위해서 OSCAR, UNIMO, VILLA, UNITER는 faster r-cnn과 같은 object detection 모델을 먼저 사용해서 vision feature를 잡고, multi-layer transformer 를 적용해서 vision feature과 text feature를 concat한다.
 	
-	
+
+
+
+## 유튜브 논문 정리 된 것 메모
+### Intro
+	pretrain -> fine-tune 하는 방식이 인기이다.
+	사람들이 든 생각은 멀티모달로 활용하면 어떨까???
+	Fusion encoder -> OSCAR, UNITER -> 이미지 임베딩하고 텍스트 임베딩이 다른 곳에 임베딩 된다.
+	Albef -> maximize global MI, 이것도 문제가 있다. 
+	- only co-occuring features are captured
+	- fails to consider lacalized and strucstal information
+	TCL ->triple contrastive loss 
+### RW
+	CLIP, ALIGN -> vision task 만 맞다
+	OSCAR는 faster r-cnn을 사용한다.
+	ViLT?(확인해 보아야하는 논문)
+	ALBEF 가 이전에 있는 것들을 합친 느낌?
+	- 
 
