@@ -67,7 +67,19 @@ NRS에 대해 투명성과 정확도가 보장이 된다면, 사용자 확인?(u
 
 확인이라는 단어가 나온 것은 ECT 때문 인 것 같음,  
 
+---
+## Study Design
 
+### 정성적 분석  
+1. 알고리즘 사용자들 중에서 사람을 선별하여 인터뷰를 진행하였다. 
+2. 3개의 focus group 세션을 수행하였다.
+3. Finally, the critical incidence technique was employed to uncover the underlying experience with NRS.
+
+### 정량적 분석
+- 2018년 8월에서 12월 동안 NRS를 접한 사람
+- 모집된 참가자들은 3주동안 NRS를 읽도록 요청되었다.  
+- 참가자들은 알고리즘 선택과 필터링이 가능하게끔 개인 정보 공유를 동의하였다.
+- 
 
 
 
