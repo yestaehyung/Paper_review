@@ -35,18 +35,19 @@ UX를 개선해야 하지만 어떻게 개선해야할지는 계속 논의되어
 
 ### 사용한 뉴스 추천 알고리즘 -> 하이브리드 NRS(협업 + 콘텐츠)
 
-User interaction model with NRS
+### User interaction model with NRS  
 	투명하고 정확한 서비스를 구축하게 되면 사람들의 사용을 올라가게 된다.     
 		H1: 투명성은 NRS의 사용자 확인에 긍정적인 영향을 준다  
 		H2: 정확도는 NRS의 사용자 확인에 긍정적인 영향을 준다.  
 
-User Perceived Value 
-	H3: 사용자의 확인은 NRS에 대해 사용자가 인식한 유용성에 긍정적인 영향을 준다.    
-	H4: 사용자의 확인은 NRS에 대해 사용자가 인식한 편리성과 긍정적인 영향을 준다.    
-	H5: 사용자가 인식한 유용성은 NRS의 만족에 긍정적인 영향을 준다.    
-	H6: 사용자가 인식한 편리성은 NRS의 만족에 긍정적인 영향을 준다.     
+### User Perceived Value   
+H3: 사용자의 확인은 NRS에 대해 사용자가 인식한 유용성에 긍정적인 영향을 준다.   
+H4: 사용자의 확인은 NRS에 대해 사용자가 인식한 편리성과 긍정적인 영향을 준다.   
+H5: 사용자가 인식한 유용성은 NRS의 만족에 긍정적인 영향을 준다.  
+H6: 사용자가 인식한 편리성은 NRS의 만족에 긍정적인 영향을 준다.     
 
-Confirmation and Satisfaction
+### Confirmation and Satisfaction
+
 
 
 
