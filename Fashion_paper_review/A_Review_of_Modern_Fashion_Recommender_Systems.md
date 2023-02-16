@@ -84,7 +84,13 @@ outfit 추천과 같은 경우는 content based로 주로 접근이 되어 왔�
 
 CBF 에 대한 내용은 많이 없는 것 같다.
 
+
 Color 추출하는 법 (Probabilistic Color Modelling of Clothing Items, 2021)
 1.  Mask-RCNN to segment the clothing items  
 2. cluster the colors into a predefined number of groups  
 3. combine the detected colors based on the hue scores and the probability of each score.
+---- 
+패션 도메인 RS에서 사용되는 public dataset  
+사용가능한 것이 적어보인다. 어떻게 활용할 수 있을지 고민 필요,
+
+![](https://i.imgur.com/1kmmTtP.png)
