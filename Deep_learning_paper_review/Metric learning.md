@@ -49,3 +49,16 @@ Deep metric learning 의 loss 함수 종류
 
 지금과 같은 방식은 label이 필요한 경우에 대한 것들이다(labeling 된 class 기준, 유사하냐 안하냐)  
 그런데 같은 이미지에서 augment해서 유사한지 아닌지로 판단 기준을 세우게 되면 self-supervised learning 에 활용할 수 있다. 
+
+# Contrastive learning
+
+self-supervised learning -> Input data 자제에서 쉽게 얻을 수 있는 정보를 사용해서 좋은 representation을 학습
+
+1. Instance Discrimination
+	1. 레이블 정보 없이 이미지끼리 학습-공유하는 representation이 있을 것이다. 
+	2. ![](https://i.imgur.com/nZiW88R.png)
+---
+
+## MOCO
+
+
