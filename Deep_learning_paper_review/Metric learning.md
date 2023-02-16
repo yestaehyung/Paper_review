@@ -59,6 +59,32 @@ self-supervised learning -> Input data 자제에서 쉽게 얻을 수 있는 정
 	2. ![](https://i.imgur.com/nZiW88R.png)
 ---
 
-## MOCO
+## MoCo
+- Memory bank 의 단점
+	- 관측치 전체에 대한 embedding 정보를 계속 저장하고 있어야한다. - 메모리 이슈
+	- 랜덤 샘플링을 통해 negative example을 구성 - 데이터 샘플별로 학습에 기여하는 정도가 다르다
+- Memory Queue 를 사용
+	- First In First Out, 모든 샘플이 동등하게 학습에 활용이 된다.
+- Momentum Encoding
+	- 과거 모델 weight들이 가중 평균으로 업데이트
+	- 과거의 나 자신들이 'teacher'가 되는 mean teacher 방식과 동일(semi-supervised model)
+	- **ALBEF 에서도 사용되는데, 내가 다시 확인해볼 필요가 있다.**
+## SimCLR
+- Queue도 사용하지 않고 batch size를 늘려서 negative 생성을 batch 안에서 해결해 보자
+- 이미지에 대해서 2번의 data augmentation을 적용
+- 그러나 4096의 batch size는 엄청난 연산이 필요하게 된다.
+- 다양한 data augmentation 기법을 활용한다. 
+- 더 좋은 feeture를 활용하기 위해 embedding layer를 깊게 쌓는다. 
+## MoCo2
+- SimCLR 에서 사용했던 방법론들은 MoCo에 적용한 것 
+- 더 좋은 성능을 보인다.
+
+## Define Example Nicely
+- 어떻게 하면 좋은 positive를 얻을 수 있을 까? Negative는 어떻게 더 잘 뽑을 수 있을까?
+- Prototype to Support Positive 
+## Sample Hard Negatives
+- Anchor 와 가까이 있는 hard negatives를 선택해야한다
+- 관측치별로 주변 density를 측정하여 샘플링에 반영
+
 
 
