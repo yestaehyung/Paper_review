@@ -81,3 +81,10 @@ outfit 추천과 같은 경우는 content based로 주로 접근이 되어 왔�
 - 학습한 것을 추천 모델에 어떻게 적용하여 디자인 할 것인지
 
 다양한 compatibility 연구가 metric learning을 사용하여 접근 
+
+CBF 에 대한 내용은 많이 없는 것 같다.
+
+Color 추출하는 법 (Probabilistic Color Modelling of Clothing Items, 2021)
+1.  Mask-RCNN to segment the clothing items  
+2. cluster the colors into a predefined number of groups  
+3. combine the detected colors based on the hue scores and the probability of each score.
