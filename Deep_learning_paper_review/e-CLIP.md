@@ -20,6 +20,8 @@ CLIP 기반의 model을 개발함,
 ![](https://i.imgur.com/LXsCvLW.png)
 
 ---
+
+# Intro
 ## 배경
 수백만명의 사용자가 사용하는 검색시스템에서 다양한 task를 지원하는 것은 사용자 경험을 향상시키는데 큰 도움을 함  
 이럴 때 일반적으로는 여러 머신러닝 모델을 사용하여, 또는 단일 프레임워크를 사용하여 개발하였기 때문에 관리나 새로운 task에 대한 대처 같은 것들이 어려웠다.  
@@ -41,3 +43,20 @@ CLIP 기반의 model을 개발함,
 
 ## 이 논문에서 하려고 하는 것
 위에서 말한 문제를 해결하기 위해 e-CLIP을 제안한다. NAVER SHOPPING의 전반적인 구조에 대해 설명하고, 학습한  e-CLIP을 어떤 downstream task에 활용할 수 있을지 확인한다. 
+
+## Contributions
+- 산업에서 contrastive learning을 적용한 첫번째 연구이다. 
+- 중복되는 제품에 상관 없이, 대규모 NAVER Shopping 데이터를 활용하여 학습할 수 있는 효과적인 학습 플랫폼인 e-CLIP을 제안한다.
+- 전자상고래에 있어서 VLP를 하는데 문제를 발견하고, 해결하기 위한 접근을 제안한다.
+- 다양한 실험을 통해서 제안한 프레임워크가 효과가 있다는 것을 보여준다.
+- 산업 시나리오에 e-CLIP을 적용하고 긍정적인 피드백을 확인하였다.
+
+# RW
+
+## Deep learning in E-commerce
+## Transfer Learning
+## Multimodal Learning
+
+# System Architecture
+
+
