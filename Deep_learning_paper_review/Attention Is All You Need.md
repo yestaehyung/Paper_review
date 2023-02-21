@@ -41,8 +41,21 @@ Transformer
 		- encoder에서 진행하는 attention은 self-attention이라고 해서 각각의 단어가 서로에게 어떤 영향을 가지고 있는 것인지 학습하는 것이다. 어떤 단어가 연관성이 높은지?
 		- 전반적인 입력 문장에 대한 문맥을 학습한다. 
 	- 성능 향상을 위해 Residual Learning을 사용한다. 
-		- 
-![Uploading file...8arfr]()
+		- ![200](https://i.imgur.com/31eAq4l.png)
+		- 특정 layer를 건너 뛰어서 학습할 수 있게함.
+		- 기존 정보를 입력 받으면서 잔여된 정보만을 학습하게 한다.
+		- 초기의 수렴 속도를 더 빠르게 한다. 
+
+트랜스포머의 동작 원리: Encoder
+- Attention 과 Normalization 과정을 반복한다.
+- 각 레이어는 서로 다른 파라미터를 가진다. 
+
+트랜스포머의 동작 원리: Encoder와 Decoder
+- 인코더의 마지막 레이어에서 나온 값을 Decoder에 넣는다. 
+- Decoder에서는 두개의 attention을 사용한다.
+	- self-attention, encoder-decoder attention(encoder에서 입력 받는 layer에서 사용)
+- 트랜스포머에서는 마지막 encoder 레이어의 출력이 모든 decoder 레이어에 입력 된다. 
+- eos 가 나올 때까지 decoder를 사용한다. 
 
 
 
