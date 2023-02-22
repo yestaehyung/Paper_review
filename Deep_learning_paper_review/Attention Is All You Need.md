@@ -57,6 +57,19 @@ Transformer
 - 트랜스포머에서는 마지막 encoder 레이어의 출력이 모든 decoder 레이어에 입력 된다. 
 - eos 가 나올 때까지 decoder를 사용한다. 
 
+트랜스포머의 동작 원리: Attention
+- Encoder와 Decoder는 Multi-Head Attention layer를 사용한다. 
+- 단어끼리 얼마나 연관성이 있는지
+- Attention 을 위한 세가지 요소
+	- Query -> 물어보는 주체
+	- Key -> 물어보는 대상
+	- Value
+	- 어떤 단어가 다른 단어에 대해 얼마나 연관성이 있는지
+- 입력 문장이 들어오는데, H개의 서로 다른 V,K,Q를 만든다
+	- H개에 서로 다른 attention concept를 학습하기 위함이다. 
+	- 서로다른 Head끼리 쌍을 받아 attention을 수행한다.
+
+
 
 
 
