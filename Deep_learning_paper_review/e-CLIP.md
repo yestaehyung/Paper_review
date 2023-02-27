@@ -67,4 +67,4 @@ CLIP 기반의 model을 개발함,
 	- 네이버 쇼핑의 경우 상품을 업로드하는데 룰이 존재함
 		- product title, price, brand name, set of images 를 함께 올려야함 
 		- 팔수 있는 것인지, 매진되었는지
-		- 제품은 classification을 통해 
+		- 제품은 classification을 통해 category를 할당받는다. 
