@@ -67,4 +67,11 @@ CLIP 기반의 model을 개발함,
 	- 네이버 쇼핑의 경우 상품을 업로드하는데 룰이 존재함
 		- product title, price, brand name, set of images 를 함께 올려야함 
 		- 팔수 있는 것인지, 매진되었는지
-		- 제품은 classification을 통해 category를 할당받는다. 
+	- 제품은 classification을 통해 category를 할당받고 비슷한 상품이 있는지 DB에서 확인한다. 
+2. 데이터 전처리
+	- corrupted data, duplicate products, skewed data distributions 를 해결하기 위해 노력
+	1. Invalid product
+		- image text pair가 valid하게 구성하는 것은 매우 중요함. 그러나 데이터를 수집하는 과정에서 mismatched 한 데이터가 있을 수 밖에 없음, **No images, too small images, corrupted images**들을 rule-based 한 방법으로 제거함, invalid한 text도 product title의 token set을 비교하여 버림, 특수 문자를 공백으로 하고 나서, token이 2개 이하인 것은 버렸다
+	1. Duplicate Products
+		- 중복되는 product를 제거함, 일단 identical 한 title로 drop 하고, product image를 (5,5) 패치로 나누어서 
+	1. Inappropriate Products
