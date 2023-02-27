@@ -73,5 +73,11 @@ CLIP 기반의 model을 개발함,
 	1. Invalid product
 		- image text pair가 valid하게 구성하는 것은 매우 중요함. 그러나 데이터를 수집하는 과정에서 mismatched 한 데이터가 있을 수 밖에 없음, **No images, too small images, corrupted images**들을 rule-based 한 방법으로 제거함, invalid한 text도 product title의 token set을 비교하여 버림, 특수 문자를 공백으로 하고 나서, token이 2개 이하인 것은 버렸다
 	1. Duplicate Products
-		- 중복되는 product를 제거함, 일단 identical 한 title로 drop 하고, product image를 (5,5) 패치로 나누어서 
+		- 중복되는 product를 제거함, 일단 identical 한 title로 drop 하고, product image를 (5,5) 패치로 나누어서 각 패치의 평균 색상 값에서 한자리 숫자의 해시 키를 생성한다. 해시 값이 동일한 image를 제거한다. 모든 이미지에 대해서 ImageNet으로 훈련한 ResNet-34의 last layer를 추출해서 같은 경우 제거한다. 
 	1. Inappropriate Products
+		- 이상한 이미지(성인, 광고) 이런 것들을 버림
+
+위와 같은 과정을 통해서 1B pair의 dataset을 330M pair로 줄이고 NAVER Shopping data로 부르기로 한다. 또한 더 짧은 학습과 baseline의 모델과 비교하기 위해 270M pair로 구성된 미니 데이터셋도 구축하였다.  
+
+--- 
+
