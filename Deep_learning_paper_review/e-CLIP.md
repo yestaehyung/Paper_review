@@ -80,4 +80,3 @@ CLIP 기반의 model을 개발함,
 위와 같은 과정을 통해서 1B pair의 dataset을 330M pair로 줄이고 NAVER Shopping data로 부르기로 한다. 또한 더 짧은 학습과 baseline의 모델과 비교하기 위해 270M pair로 구성된 미니 데이터셋도 구축하였다.  
 
 --- 
-
