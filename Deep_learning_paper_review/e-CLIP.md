@@ -47,7 +47,7 @@ CLIP 기반의 model을 개발함,
 ## Contributions
 - 산업에서 contrastive learning을 적용한 첫번째 연구이다. 
 - 중복되는 제품에 상관 없이, 대규모 NAVER Shopping 데이터를 활용하여 학습할 수 있는 효과적인 학습 플랫폼인 e-CLIP을 제안한다.
-- 전자상고래에 있어서 VLP를 하는데 문제를 발견하고, 해결하기 위한 접근을 제안한다.
+- 전자상거래에 있어서 VLP를 하는데 문제를 발견하고, 해결하기 위한 접근을 제안한다.
 - 다양한 실험을 통해서 제안한 프레임워크가 효과가 있다는 것을 보여준다.
 - 산업 시나리오에 e-CLIP을 적용하고 긍정적인 피드백을 확인하였다.
 
@@ -80,3 +80,14 @@ CLIP 기반의 model을 개발함,
 위와 같은 과정을 통해서 1B pair의 dataset을 330M pair로 줄이고 NAVER Shopping data로 부르기로 한다. 또한 더 짧은 학습과 baseline의 모델과 비교하기 위해 270M pair로 구성된 미니 데이터셋도 구축하였다.  
 
 --- 
+## Pre training Method: E-CLIP
+
+![](https://i.imgur.com/GIkSQOw.png)
+
+Pretrain을 할 때 Clip과 LiT에서 제안한 contrastive loss를 기반으로 진행하였다. 그러나 중복된 product와 메모리, 학습 속도를 고려해서 차이를 두었고 사전학습 한 모델은 downstream task에 활용하였다.  
+
+### 3.3.1 Model architecture
+
+- e-CLIP의 구조는 원본 CLIP과 동일하게 dual encoder 구조를 따른다.  
+- CNN이 많은 vision task 에 활용되지만, computational effciency를 고려해서 ViT-B/32 를 image encoder로 사용하였다. (CNN보다 ViT가 더 짧은 GPU load와 훈련 시간을 가지고 있음)
+- 
