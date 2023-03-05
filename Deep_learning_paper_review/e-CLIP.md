@@ -88,6 +88,10 @@ Pretrain을 할 때 Clip과 LiT에서 제안한 contrastive loss를 기반으로
 
 - LiT -> zero-shot task를 할 때 image-encoder는 pretrain-model 가지고와서 freeze하고 text는 scratch 부터 학습하는 것이 좋다는 내용의 논문
 
+e-clip 자체의 구조는 원본과 동일하지만, e-commerce의 특징상 중복되는 데이터가 있기 때문에 sampling 을 할 때 category 기반 방식을 사용함. 또한 computation 적인 것을 줄이기 위해 노력함  
+
+-> 거대 데이터 + e-commerce에서 발생할 수 있는 contrastive loss의 문제점 + computational power들을 어느정도 해결해서 사용함 
+
 ### 3.3.1 Model architecture
 
 - e-CLIP의 구조는 원본 CLIP과 동일하게 dual encoder 구조를 따른다.  
@@ -98,4 +102,6 @@ Pretrain을 할 때 Clip과 LiT에서 제안한 contrastive loss를 기반으로
 
 ### 3.3.2 Training objective 
 
-- InfoNCE loss는 cosine sim 이 높으면 
+- InfoNCE loss는 유사한 pair가 cosine sim이 높도록, 유사하지 않은게 cosine sim이 낮도록 학습하는 loss임
+- **그러나 네이버 쇼핑 데이터셋은 중복되는 데이터기 많기 때문에, 같은 상품끼리 negative pair를 형성해서 학습이 잘 안이루어 질 수도 있다!** -> 우리도 동일함,
+- 위의 상황을 다루기 위해 
