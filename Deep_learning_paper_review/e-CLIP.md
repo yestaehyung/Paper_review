@@ -86,8 +86,16 @@ CLIP 기반의 model을 개발함,
 
 Pretrain을 할 때 Clip과 LiT에서 제안한 contrastive loss를 기반으로 진행하였다. 그러나 중복된 product와 메모리, 학습 속도를 고려해서 차이를 두었고 사전학습 한 모델은 downstream task에 활용하였다.  
 
+- LiT -> zero-shot task를 할 때 image-encoder는 pretrain-model 가지고와서 freeze하고 text는 scratch 부터 학습하는 것이 좋다는 내용의 논문
+
 ### 3.3.1 Model architecture
 
 - e-CLIP의 구조는 원본 CLIP과 동일하게 dual encoder 구조를 따른다.  
 - CNN이 많은 vision task 에 활용되지만, computational effciency를 고려해서 ViT-B/32 를 image encoder로 사용하였다. (CNN보다 ViT가 더 짧은 GPU load와 훈련 시간을 가지고 있음)
-- 
+- Data의 irregularity and sparsity를 고려해서 BERT를 text encoder로 사용하였다. 
+	- Multiple language가 가능하다고 설명을 하였기는 함
+- ALIGN, CLIP 에서 CLS 토큰을 representation으로 사용했던 것 또는 BASIC 에서 사용하였던 representation의 평균을 사용하는 것 보다 **e-CLIP의 last layer에서 representation의 평균을 계산함**
+
+### 3.3.2 Training objective 
+
+- InfoNCE loss는 cosine sim 이 높으면 
