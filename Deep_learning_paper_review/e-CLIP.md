@@ -104,4 +104,5 @@ e-clip 자체의 구조는 원본과 동일하지만, e-commerce의 특징상 �
 
 - InfoNCE loss는 유사한 pair가 cosine sim이 높도록, 유사하지 않은게 cosine sim이 낮도록 학습하는 loss임
 - **그러나 네이버 쇼핑 데이터셋은 중복되는 데이터기 많기 때문에, 같은 상품끼리 negative pair를 형성해서 학습이 잘 안이루어 질 수도 있다!** -> 우리도 동일함,
-- 위의 상황을 다루기 위해 
+- 위의 상황을 다루기 위해 catalog-based soft labeling 으로 InfoNCE loss를 수정하였다. 
+- 네이버 쇼핑 데이터에서는 i 번째와 j번째의 데이터가 겹칠 수 있다. 그러나 clip의 특성상 i - i 번째 pair가 positive pair(1)로 계산이 된다. 그러나 만약 데이터가 겹치게 되면 j 번째 데이터가 negative로 규정을 해버리게 된다. 그래서 이것을 보완하기 위해 카탈로그를 사용하였다. 
