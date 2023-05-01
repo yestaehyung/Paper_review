@@ -18,8 +18,20 @@ Despite the myriad XAI techniques, many of them remain difficult to understand, 
 
 In this work, we extend the framing of relatable explanations beyond contrastive explanations to include saliency, counterfactuals, and cues. Explanations should be relatable towards concepts via contrastive explanations, towards exemplars by pro- viding counterfactual examples, and towards associated auxiliary concepts such as sensory and semantic cues.
 
+Counterfactual Explanation
+- 반사실적 설명
+- X 가 발생하지 않았더라면 Y가 발생하지 않았을 것 이라는 형태로 인과관계를 설명
+	- 내가 뜨거운 커피를 한 모금 마시지 않았더라면 혀가 데이지 않았을 텐데
+- 해석 가능한 머신러닝에서는 반사실적 설명이 개별 인스턴스의 예측에 대한 설명으로 사용된다.
+- '사건'은 인스턴스의 예측된 결과값이고, '원인'은 모델의 입력값으로 사용되어 특정 결과를 '유도'한 인스턴스의 특성값
+- 우리는 모델의 입력값을 예측의 원인으로 생각한다.
+- 반사실적 설명은 예측값을 사전 정의된 결과값으로 변경하는 특성값의 작은 변화를 설명
+
 Contrastive Saliency
 - Saliency detection -> 관심있는 물체를 관심이 없는 것으로부터 분리시키는 것
+
 Counterfactual Synthetic
+- StarGan을 확장해서 음성데이터에 활용가능한 StarGan-VC를 통해 counterfactual synthetic 을 생성함
+
 
 Contrastive Cues
