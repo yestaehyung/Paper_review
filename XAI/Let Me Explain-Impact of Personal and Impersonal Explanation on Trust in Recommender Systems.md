@@ -31,4 +31,23 @@ a thorough empirical comparison with systems using richer explanations— especi
 		- 참가자들이 다른 사람이나 일반적인 RS에 의해 선택된 권장사항을 평가하도록 하는 study
 		- 추천 결과에는 RS에 대한 개인적인 조건 또는 유사성 기반에 대한 설명이 구성되어 있음
 	- By utilizing tools of causal statistical inference, i.e. structural equation modeling [33] and the counterfactual framework [18, 35, 40] -> 이걸 수행해서 충분한 설명이 신뢰 구축 과정에 큰 역할을 한다는 것을 확인하였다. 
-결과적으로 인간이 정보를 교환하는 방식을 모방하는 설명할 수 있는 컴포넌트를 RS 개바 더하는 것은 
+결과적으로 인간이 정보를 교환하는 방식을 모방하는 설명할 수 있는 컴포넌트를 RS 개발할 때 더하는 것은 합리적이다.
+
+반사실적 분석은 우리를 RS가 어떤 것을 해야하는 가설적인 상황에 대한 답변을 할 수 있도록 도와준다.
+- 다른 알고리즘의 변화 없이 유사도 기반의 설명을 인간과 같은 설명으로 대체 하는 것은 추천의 기대되는 품질을 13%향상 시켰습니다. 
+
+여기의 참가자들은 이주동안 두개의 추천을 받는다. -> 저자들이 신뢰 개발을 그 시간동안 접근할 수 있게 한다. 
+인간에 대한 신뢰는 변하지 않았지만, 자동화된 상대에 대한 신회는 약간 감소하는 것을 확인함. 
+
+Contribution
+- User study했는데, personal VS impersonal, 이건 그룹에 따라 어떻게 perceived 하는지, 어떻게 신뢰가 만들어 지는지 확인할 수 있었다.
+- explanation quality, recommendation quality, social presence, trustworthiness 사이의 복잡한 의존성을 밝혀내었다.
+- RS가 그들의 의견을 설명하는 것을 더 잘 갖추고 있어야함을 제안
+
+Personal vs Impersonal 차이를 확인하기 위해 between subject online study를 수행하였다. 
+- between subject online study -> 다른 사람이 각각 컨디션이 다른걸 사용, 각 사람은 한개의 interface만 사용한다. 
+
+영화 추천 하는 것, 
+- 영화로 선택한 이유
+	- 사람들이 domain에  친숙했으면 좋았을 것 같음 -> 그래야 추천을 해줄 수 있다
+	- automatic RS dataset이 잘 구축되어 있다는 것
