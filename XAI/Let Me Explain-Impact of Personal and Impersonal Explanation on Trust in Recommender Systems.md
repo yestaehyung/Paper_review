@@ -78,4 +78,4 @@ Impersonal Condition
 Personal Condition
 - 모든 참가자들은 buddy를 할당 받는다. 
 	- buddy: In general this assignment was random but we controlled it for avoiding reciprocal relations. Participants received recommendations from a different person as they were providing recommendations to.
-- 
+- 0
