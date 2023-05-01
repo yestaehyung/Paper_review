@@ -51,3 +51,29 @@ Personal vs Impersonal 차이를 확인하기 위해 between subject online stud
 - 영화로 선택한 이유
 	- 사람들이 domain에  친숙했으면 좋았을 것 같음 -> 그래야 추천을 해줄 수 있다
 	- automatic RS dataset이 잘 구축되어 있다는 것
+
+영화를 보길 원하기 때문에 Amazon prime을 보유하고 있는 393 명의 참가자를 모집
+
+실험 참가자는 93명
+- 55 여자, M = 25.75, SD = 9.00 의 나이, 학생(68%), 직장인(24%)
+- 아마존 프라임 계정을 가지고 있어서 추천한 영화를 볼 수 있어야함
+- daily(41%), weekly(31%)로 online streaming을 사용해야함
+- 49명은 personal에 44명은 impersonal에 배정함
+
+참가자들은 독립된 컨디션에서 10개의 영화를 평점 매긴다. 
+- 5-point 점수로 선호 평가 
+
+그리고 Figure 1의 실험 구조를 따름
+![](https://i.imgur.com/TOArMnw.png)
+
+Impersonal Condition
+- 참가자들이 평점을 매기고 나서 즉시 영화에 대해 추천을 받게 됨
+- 추천은 Matrix Factorization 기술로 이루어지고 개발은  java로 진행함
+- 추천에 대해 유사도 기반 설명이 같이 보여진다. 
+- Fight Club 이 추천되고 Pulp Fiction이 사용자가 높게 평점을 매겼으면 설명은 아래와 같음
+	- Fight club is recommended to you because it is very similar to Pulp Fiction
+- 이렇게 추천과 설명을 받고 나서 참가자들은 영화를 보는 것을 요청 받았고, 추천과 설명에 대해 5-Point scale로 평가를 함
+- 다시 이 과정을 반복하는 과정을 거침 
+
+Personal Condition
+- 
