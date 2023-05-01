@@ -26,4 +26,9 @@ In the same line, designers of RS often strive to increase transparency and trus
 a thorough empirical comparison with systems using richer explanations— especially in terms of the perceived trustworthiness and its influential factors—is still missing.
 
 이 논문에서 저자들이 주장하는 것
-
+- 지나치게 단순한 설명이 추천 소스에 대한 신뢰를 확립하는데 관련한 표현력과 사회적 특성이 부족하다?
+	- 이 주장을 뒷받침하기 위해 user study를 수행함
+		- 참가자들이 다른 사람이나 일반적인 RS에 의해 선택된 권장사항을 평가하도록 하는 study
+		- 추천 결과에는 RS에 대한 개인적인 조건 또는 유사성 기반에 대한 설명이 구성되어 있음
+	- By utilizing tools of causal statistical inference, i.e. structural equation modeling [33] and the counterfactual framework [18, 35, 40] -> 이걸 수행해서 충분한 설명이 신뢰 구축 과정에 큰 역할을 한다는 것을 확인하였다. 
+결과적으로 인간이 정보를 교환하는 방식을 모방하는 설명할 수 있는 컴포넌트를 RS 개바 더하는 것은 
