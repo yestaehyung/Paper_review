@@ -76,4 +76,4 @@ Impersonal Condition
 - 다시 이 과정을 반복하는 과정을 거침 
 
 Personal Condition
-- 
+- 모든 
