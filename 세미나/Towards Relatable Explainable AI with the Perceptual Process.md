@@ -18,3 +18,8 @@ Despite the myriad XAI techniques, many of them remain difficult to understand, 
 
 In this work, we extend the framing of relatable explanations beyond contrastive explanations to include saliency, counterfactuals, and cues. Explanations should be relatable towards concepts via contrastive explanations, towards exemplars by pro- viding counterfactual examples, and towards associated auxiliary concepts such as sensory and semantic cues.
 
+Contrastive Saliency
+- Saliency detection -> 관심있는 물체를 관심이 없는 것으로부터 분리시키는 것
+Counterfactual Synthetic
+
+Contrastive Cues
