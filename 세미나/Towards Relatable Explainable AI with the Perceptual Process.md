@@ -18,6 +18,11 @@ Despite the myriad XAI techniques, many of them remain difficult to understand, 
 
 In this work, we extend the framing of relatable explanations beyond contrastive explanations to include saliency, counterfactuals, and cues. Explanations should be relatable towards concepts via contrastive explanations, towards exemplars by pro- viding counterfactual examples, and towards associated auxiliary concepts such as sensory and semantic cues.
 
+1.  XAI Perceptual Processing Framework for relatable explanations inspired from theories in human cognition.
+2.  RexNet model with multiple relatable explanation (Contrastive Saliency, Counterfactual Synthetic, Contrastive Cues).
+3.  First to provide relatable explanations for audio predictions.
+4.  Evaluation of usage and usefulness of relatable explanations.
+
 Counterfactual Explanation
 - 반사실적 설명
 - X 가 발생하지 않았더라면 Y가 발생하지 않았을 것 이라는 형태로 인과관계를 설명
@@ -35,3 +40,7 @@ Counterfactual Synthetic
 
 
 Contrastive Cues
+
+2.2 Human-Centered Explainable AI
+
+Abdul et al. [1] found a large gap between XAI algorithms and human-centered research. To close this gap, HCI researchers have been active in evaluating the various benefits of XAI or lack thereof, including understanding and trust [64], uncertainty [62, 105, 110], cognitive load [2], types of examples [11], etc. Studies have sought to determine the "best" explanation type [64, 100], but others have revealed the benefit of reasoning with multiple explanations [6, 61, 63]. Hence, we propose a unified framework to provide multiple relatable explanations together. We determined our human-centered explanation requirements by studying literature on human cogni- tion, which is epistemologically similar to works grounded in phi- losophy and psychology [72, 104], and unlike empirical approaches to elicit user requirements [22, 58, 59]. Furthermore, current works focus on explaining higher-level reasoning tasks, but not perception tasks that are commonplace. This has implications on the depth of explanations to provide, which we investigate in this work.
