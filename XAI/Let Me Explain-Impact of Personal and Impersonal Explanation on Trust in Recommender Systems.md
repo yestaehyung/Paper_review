@@ -85,3 +85,9 @@ Personal Condition
 웹사이트를 제작, impersonal, personal 모두 같은 사이트에서 진행
 2주가 지나고 나서 참가자들은 질문을 채우는 것을 요청받았다. 
 시스템에 로그인하고 나서 preference elicitation을 하기 전에, 참가자들은 general demographics에 대한 첫번째 질문을 받았다.   
+질문 한개 더 함, 
+![](https://i.imgur.com/NxrhHZI.png)
+
+구조 방정식 모델링을 어떻게 해석해야하는지는 잘 모르겠음
+- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gracestock_1&logNo=120200806864
+- 
