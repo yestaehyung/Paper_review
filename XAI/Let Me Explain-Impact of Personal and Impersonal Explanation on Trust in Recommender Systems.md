@@ -78,4 +78,10 @@ Impersonal Condition
 Personal Condition
 - 모든 참가자들은 buddy를 할당 받는다. 
 	- buddy: In general this assignment was random but we controlled it for avoiding reciprocal relations. Participants received recommendations from a different person as they were providing recommendations to.
-- 0
+- 393명은 추천을 해주는 사람들로 모두 아마존 프라임이 사용 가능한 사람들
+- 393명 중에서 참가자는 한명을 추천을 위해 고르고 왜 그들이 추천을 했는지에 대한 설명을 받는다
+	- 이 설명은 255 글자로 제한, impersonal과 비슷하게 유지하기 위해
+
+웹사이트를 제작, impersonal, personal 모두 같은 사이트에서 진행
+2주가 지나고 나서 참가자들은 질문을 채우는 것을 요청받았다. 
+시스템에 로그인하고 나서 preference elicitation을 하기 전에, 참가자들은 general demographics에 대한 첫번째 질문을 받았다.   
