@@ -90,4 +90,11 @@ Personal Condition
 
 구조 방정식 모델링을 어떻게 해석해야하는지는 잘 모르겠음
 - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gracestock_1&logNo=120200806864
-- 
+
+ 
+![](https://i.imgur.com/JgzJNVH.png)
+
+- 인간이 하는 추천에 대한 설명의 질이 우사성 기반 설명보다 더 높은 품질을 달성
+- 설명의 질은 조건과 추천의 질뿐만 아리날 조건과 사회적 존재 사이의 매개자 역할을 한다.
+- 조건은 추천 품질에 부정적인 직접적인 영향을 주고, buddy가 낮은 품질의 추천을 제공한다.
+
