@@ -22,7 +22,9 @@ INTRODUCTION
 
 그래서 RS를 디자인하는 사람들은 투명성과 신뢰성을 높이기 위해서 text 기반의 설명을 추가한다.
 - 사용자가 최근에 본 상품과 추천 상품의 유사성을 나타내는 것
-- 'User who bought ... '
+- 'User who bought ... ' 
+- 이러한 간단한 질문이 효과가 있는지 질문이 계속되었음, 그래서 richer explanintions와 비교
+	- 어떻게 trustworthiness and influential factors의 인식 차이가 있는지 확인
 
 
 이 논문에서 저자들이 주장하는 것
