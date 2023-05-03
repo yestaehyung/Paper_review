@@ -7,27 +7,23 @@ Consequently, we suggest that RS should provide richer explanations in order to 
 
 INTRODUCTION
 
+## RS에서 문제 상황
 온라인 플랫폼은 impersonal한 추천 시스템에 의존하고 있다. 이러한 추천은 너문 많은 대안이 있을 떄 사용자의 의사결정을 도와주는 역할을 한다.   
 시스템의 정확도가 높아도, black box이기 때문에 사용자의 detail을 다루지 못할 수도 있고, 결과적으로 unfitting한 mental model을 생성할 수도 있다. 그러면 추천 시스템을 거부하고 신뢰하지 않을 수 있다.   
 
+## trust 를 보는 이유?
+그래서 몇몇의 연구자들은 RS의 퀄리티를 확인할 때,  RS의 truth-worthiness 를 고려해야한다고 한다. 
 
+그런데 RS는 trust를 증가시킬 때 중요한 human properties가 부족하다, 그리고 이건 사용자가 bonds를 어떻게든 형성하게 어렵게 만든다. 이걸 완화하기 위해서 social components의 introduce를 into RS하는게 좋다. -> 이런걸 반영하는 웹 사이트가 있다: 사람이 만든 추천과 자동추천을 섞어놓은 경우(사람이 review를 작성하는 것과 같은 것)      
 
-현 추천 시스템의 상황
+**그러니까 사람이 리뷰를 남기는 것과 같이 추천에 도움이 될 수 있는 요소를 추가하는 것 -> 신뢰 향상에 도움이 된다.**        
 
-Even though recommendation algorithms have become highly accurate in terms of estimating a user’s preferences [1, 15], they oftentimes appear as “black boxes” by concealing important details from their users. As a consequence, users create an unfitting mental model of the RS which may result in distrust and ultimately even in rejection of the system’s recommendations [17, 46].
+근데 내가 생각했을 때 약간 당연한 걸 확인하는 느낌..?
 
-RS are faceless entities lacking the human properties that are important for the development of trust, thus making it difficult for users to form bonds of any kind.
+그래서 RS를 디자인하는 사람들은 투명성과 신뢰성을 높이기 위해서 text 기반의 설명을 추가한다.
+- 사용자가 최근에 본 상품과 추천 상품의 유사성을 나타내는 것
+- 'User who bought ... '
 
-이전 연구에서 어떻게 추천 시스템을 설명하려는 노력에 대한 방법
-
-One way to alleviate this, is to introduce social components into RS [6, 26]. There is a growing number of websites where automated and human-generated recommendations are combined—the latter, for example, in form of customer product reviews. For the reasons above, personal recommendation sources, i.e. users providing recommendations, are often associated with a higher trustworthiness [26, 44].
-
-In the same line, designers of RS often strive to increase transparency and trustworthiness by providing textual ex- planatory components for recommendations [5, 46, 50]. A very common technique is to indicate similarity between re- commendations and items the user is currently browsing or has expressed preferences for in the past. A well-known ex- ample for the former is Amazon’s “Users who bought . . . also bought . . . ” explanation. Similar kinds of explanations are applied by, for instance, Netflix and Spotify. Even though the effectiveness of such simplistic approaches utilizing similarity- based explanations has been questioned [5, 12], 
-
-
-이전 추천 시스템에서의 설명 하는 것의 문제점
-
-a thorough empirical comparison with systems using richer explanations— especially in terms of the perceived trustworthiness and its influential factors—is still missing.
 
 이 논문에서 저자들이 주장하는 것
 - 지나치게 단순한 설명이 추천 소스에 대한 신뢰를 확립하는데 관련한 표현력과 사회적 특성이 부족하다?
