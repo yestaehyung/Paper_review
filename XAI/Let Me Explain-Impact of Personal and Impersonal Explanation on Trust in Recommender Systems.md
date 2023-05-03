@@ -1,5 +1,13 @@
 실험 중심으로 H에게 업데이트
 
+우리가 LBW를 기반으로 전문가들이 어떻게 생각을 하는지(전문가의 의견)을 받음
+- 전문가들은 일반인보다 추천 결과가 유사한 것을 선호함
+
+이러한 전문가의 의견을 반영해서 추천 시스템을 설계함(전문가의 의견을 반영해서 시스템 설계)
+
+이 것 뒤로 해서 어떤 것을 볼 것 인지?
+
+
 중요하다고 생각되는 부분 붙여넣기
 
 ABSTRCT
@@ -102,3 +110,10 @@ Personal Condition
 - 설명의 질은 조건과 추천의 질뿐만 아리날 조건과 사회적 존재 사이의 매개자 역할을 한다.
 - 조건은 추천 품질에 부정적인 직접적인 영향을 주고, buddy가 낮은 품질의 추천을 제공한다.
 
+Our results suggest that the higher-quality explanations provided by participants had an overall positive effect on their buddies’ trusting beliefs and trusting intentions, despite the lower recommendation quality. We discuss the implications of our findings in the next section.
+
+
+낮은 추천 결과에도 불구하고, 참가자가 제공한 높은 퀄리티의 설명은 buddies 의 신뢰에 전체적으로 긍적적인 영향을 주었다. 
+
+1. 좋은 설명은 추천의 정확도가 낮아도 괜찮다.
+2. 사람은 설명을 매우 높은 퀄리티로 생성한다. 
