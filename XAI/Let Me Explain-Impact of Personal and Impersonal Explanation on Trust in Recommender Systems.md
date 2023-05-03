@@ -7,6 +7,10 @@ Consequently, we suggest that RS should provide richer explanations in order to 
 
 INTRODUCTION
 
+온라인 플랫폼은 impersonal한 추천 시스템에 의존하고 있다. 이러한 추천은 너문 많은 대안이 있을 떄 사용자의 의사결정을 도와주는 역할을 한다.   
+시스템의 정확도가 높아도, black box이기 때문에 사용자의 detail을 다루지 못할 수도 있고, 결과적으로 unfitting한 mental model을 생성할 수도 있다. 그러면 추천 시스템을 거부하고 신뢰하지 않을 수 있다.   
+
+
 
 현 추천 시스템의 상황
 
