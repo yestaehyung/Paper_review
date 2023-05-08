@@ -12,6 +12,7 @@ VLP -> multi-modal data에 대해서 representation을 학습하고, downstream 
 CLIP은 400 million의 image-text pair dataset으로 이미지를 학습함    
 다양한 논문이 여기서 영감을 받아 시작함 -> including data modality[72], downstream tasks[57], training data efficiency[19, 44].   
 
+
 ### 문제 상황
 
 Specifically, the data pairs for pre-training are organized in the simplest manner, where only the descriptions of matched and unmatched are used to represent the relation between a given image and text pair. This usually leads to a degenerated scenario, where the model tends to rely on the co-occurrence of inputs instead of their semantic meanings.     
