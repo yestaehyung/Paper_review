@@ -13,6 +13,8 @@ VLP -> 각각의 모델을 each specific task에 훈련하는 것이 아닌 다�
 CLIP은 400 million의 image-text pair dataset으로 이미지를 학습함    
 다양한 논문이 여기서 영감을 받아 시작함 -> including data modality[72], downstream tasks[57], training data efficiency[19, 44].   
 
+현재 pre-training framework는 문제가 있다.
+- pre-training에  사용되는 data pa
 
 ### 문제 상황
 
