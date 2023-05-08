@@ -6,7 +6,8 @@ CLIP에 semantic한 정보를 주입한 방법, 이러한 방법을 통해서 �
 
 # Introduction
 
-VLP -> multi-modal data에 대해서 representation을 학습하고, downstream task에 쉽게 접근할 수 있도록 함    
+VLP -> 각각의 모델을 each specific task에 훈련하는 것이 아닌 다양한 modal을 인식하고 포괄적인 task를 다루는 것을 목적으로 하고 multi-modal data에 대해서 representation을 학습하고, downstream task에 쉽게 접근할 수 있도록 함       
+
 이전의 VLP들은 image에서 object를 detecting 하여 word token 과 align을 맞추고자 함, 그러나 이러한 방법은 추가적인 resource가 든다는 단점이 있음    
 
 CLIP은 400 million의 image-text pair dataset으로 이미지를 학습함    
