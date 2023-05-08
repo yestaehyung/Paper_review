@@ -14,11 +14,16 @@ CLIP은 400 million의 image-text pair dataset으로 이미지를 학습함
 다양한 논문이 여기서 영감을 받아 시작함 -> including data modality[72], downstream tasks[57], training data efficiency[19, 44].   
 
 현재 pre-training framework는 문제가 있다.
-- pre-training에  사용되는 data pa
+- pre-training에  사용되는 data pair가 단순하게 구성이 되어있다는 것이다. match or unmatched로만 그들의 관계를 표현하려 한다.
+- 아래 그림과 같은 문제도 발생한다. imagenet zeroshot 문제인데, 두 scripts가 비슷하지만 다르다는 것이 있다. 
+- 이러한 결과는 모델이 제한되고, VQA와 같은 task에서 좋지 못한 성능을 보여준다.
 
-### 문제 상황
+![](https://i.imgur.com/qRGa3tt.png)
 
-Specifically, the data pairs for pre-training are organized in the simplest manner, where only the descriptions of matched and unmatched are used to represent the relation between a given image and text pair. This usually leads to a degenerated scenario, where the model tends to rely on the co-occurrence of inputs instead of their semantic meanings.     
+이러한 semantic perceiving 에 관한 pre-train 모델의 한계를 다루기 위해, 저자들은 KG를 추가하였다.     
+KG는 entities와 relation으로 구성된 large scale semantic network이다.    
+data의 구조에 graph strucutre를 적용하는 것을 통해서, KG는 풍부한 정보를 줄수 있게된다.    
+
 
 ### 문제 해결 방안
 
