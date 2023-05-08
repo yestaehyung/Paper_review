@@ -32,4 +32,9 @@ In this paper, we propose a novel vision-language pre-training approach, dubbed 
 
 This simple training framework actually brings several concerns that need to be addressed. First, the pre-training framework fails to model the semantic information of inputs due to the simplicity of the data structure. This results in inferior performances on tasks that require reasoning ability, e.g., visual question answering and visual commonsense reasoning. Second, the image and text features reside in separate spaces, which makes it difficult to model the interactions between different modalities. Third, the massive time and resource consumption in the training procedure set restrictions on performing a full pre-training schedule from scratch.
 
+# Knowledge-CLIP
+
+## Data preparation
+
+## Model Architecture
 
