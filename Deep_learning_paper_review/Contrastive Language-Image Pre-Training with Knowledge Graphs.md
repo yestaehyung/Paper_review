@@ -50,3 +50,5 @@ This simple training framework actually brings several concerns that need to be 
 
 
 전반적으로 KG와 Graph loss에 대해 공부를 해야할 것 같음
+
+![1000](https://i.imgur.com/eukmRCR.png)
