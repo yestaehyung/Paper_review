@@ -47,3 +47,6 @@ XAI를 가장 잘 이야기 할 수 있는 것이 RS이며 이러한 연구가 �
 이 논문에서 확인한 것
 - 참가자의 XAI 니즈가 그들의 domain/AI background level and interest level에 따라서 다양했다.일반인들은 그냥 호기심이 있는 정도였지만, AI 전문가와 새 전문가는 AI 시스템에 대해 높은 니즈를 가지고 있었다. 그런데 참가자들은 어떻게 AI와 협력을 하면 좋은지에 대해 더 좋은 정보에 대한 needs가 있었다. 
 - 참가자들은 AI의 결과를 이해하면, 다양한 목적에 따라 XAI의 설명을 사용하는 경향이 나타났다.  
+
+
+Concretely, we created a screening survey with ques- tions about the respondent’s domain background, AI background, and app usage pattern (e.g., regularly used app features, frequency of app use).
