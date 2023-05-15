@@ -62,12 +62,19 @@ CLIP의 input과 달리 이 논문은 KG를 입력으로 받는다. head, tail, 
 1. multi-modal knowledge graph
 	1. Entities가 image, text를 모두 포함하게 된다. 
 	2. 이것은 semantic connection을 vision과 language 사이에 만들어 준다. 
-	3. 이렇게 되면 트리플렛은 ()
+	3. 이렇게 되면 트리플렛은 (Img, Rel, Img), (Text, Rel, Img), (Text, Rel, Text) 이렇게 구성이 된다. 
+		1. 풍부한 정보를 모달리티간에 교환을 할 수 있다.
 2. scene graph
+	1. Visual concept를 뽑는다. 예를 들어서 image에 장소와 연관된 미리 정의된 sematic relation 설명이 같이 있음
+	2. 이렇게 될 경우 (Img, Rel, Img)의 트리플렛이 구성이 된다. 
+	3. 두개의 엔티티가 같은 이미지의 다른 구역에서 나오게 된다묜, model은 더 fine-grained한 특징을 추출할 수 있다.
 3. language-base knowledge graph
+	1. (Text, Rel, Text)의 트리플렛으로 구성이 되어있다. word token끼리의 semantic한것을 align할 수 있다. 
 
 
 ## Model Architecture
+
+encoder 지나고 나서, pooling이 있는데 효율 + local region에 대해 loss를 줄이기 위해 pooling을 제거함, 그런데 relation의 경우 한개 또는 두개의 token으로 구성이 되기 때문에, pooling을 제가히지는 않았다.
 
 
 
