@@ -39,11 +39,33 @@ In this paper, we propose a novel vision-language pre-training approach, dubbed 
 
 ### clip의 문제점
 
-This simple training framework actually brings several concerns that need to be addressed. First, the pre-training framework fails to model the semantic information of inputs due to the simplicity of the data structure. This results in inferior performances on tasks that require reasoning ability, e.g., visual question answering and visual commonsense reasoning. Second, the image and text features reside in separate spaces, which makes it difficult to model the interactions between different modalities. Third, the massive time and resource consumption in the training procedure set restrictions on performing a full pre-training schedule from scratch.
+CLIP은 두개의 분리된 이미지, 텍스트 인코더를 사용함. Image encoder는 ResNet 기반을 사용할 수도 있고, ViT 기반을 사용할수도 있음, BERT도 다양한 종류를 사용할 수 있음. ViT가 기본적으로 더 좋다고 밝혀짐, 이 논문에서는 transformer를 사용하는 모델만 고려가 된다. text input과 image input 모두 patch로 바뀌고 POS가 추가된다. 
+
+이렇게 단순한 것의 문제는 아래와 같음
+1. pre-training network가 data 구조의 단순한 것 때문에 입력의 sematic information을 잘 학습하지 못한다.
+	1. 이렇게 되면 VQA, visual commonsense reasoning 과 같은 추론 능력을 필요로 하는 task에 대해서 성능이 안나온다
+2. image와 text feature가 분리된 공간에 있어서, 모델이 다른 모달리티에서 상호작용을 어렵게 만든다.
+3. 처음부터 모든 것을 pre-train하기에 시간 소요와 같은 너무 어려운 문제가 있다. 
 
 # Knowledge-CLIP
 
+위에서 이야기한 CLIP의 문제점을 바탕으로 KG를 바탕으로 하는 pre-train framework를 제안한다. 
+1. we introduce knowledge graphs into the training dataset where the graph-structured data and semantic relations between concepts enable the model to extract semantic features and establish semantic connection across inputs
+2. multi-modal encoder is added on top of the current image and text encoders to fuse the features from different modalities, and model the joint distribution between inputs
+3. A continuous learning strategy based on the pre-trained model of CLIP is adopted which avoids the massive computation cost in the pre-training procedure, and enhance the generalization power of the model efficiently
+
 ## Data preparation
+
+CLIP의 input과 달리 이 논문은 KG를 입력으로 받는다. head, tail, relation 이 트리플렛이 들어가게 되고    
+여기서 학습에 사용한 데이터는 VisualSem, VisualGenome, ConceptNet 이 세가지가 된다. 
+
+1. multi-modal knowledge graph
+	1. Entities가 image, text를 모두 포함하게 된다. 
+	2. 이것은 semantic connection을 vision과 language 사이에 만들어 준다. 
+	3. 이렇게 되면 트리플렛은 ()
+2. scene graph
+3. language-base knowledge graph
+
 
 ## Model Architecture
 
