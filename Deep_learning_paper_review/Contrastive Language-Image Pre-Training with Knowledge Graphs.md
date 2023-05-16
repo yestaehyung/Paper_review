@@ -76,6 +76,9 @@ CLIP의 input과 달리 이 논문은 KG를 입력으로 받는다. head, tail, 
 
 encoder 지나고 나서, pooling이 있는데 효율 + local region에 대해 loss를 줄이기 위해 pooling을 제거함, 그런데 relation의 경우 한개 또는 두개의 token으로 구성이 되기 때문에, pooling을 제가히지는 않았다.
 
+## Training Targets
+
+
 
 
 전반적으로 KG와 Graph loss에 대해 공부를 해야할 것 같음
