@@ -78,6 +78,7 @@ encoder 지나고 나서, pooling이 있는데 효율 + local region에 대해 l
 
 ## Training Targets
 
+Triplet-based loss
 
 
 
