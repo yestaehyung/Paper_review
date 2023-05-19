@@ -47,6 +47,16 @@ CLIP은 두개의 분리된 이미지, 텍스트 인코더를 사용함. Image e
 2. image와 text feature가 분리된 공간에 있어서, 모델이 다른 모달리티에서 상호작용을 어렵게 만든다.
 3. 처음부터 모든 것을 pre-train하기에 시간 소요와 같은 너무 어려운 문제가 있다. 
 
+
+# Knowledge Graph
+
+일단 지식 정보를 Knowledge base로 바꾸고, 이를 다시 graph로 변경함
+
+Knowledge base에서는 subject, object, relation으로 구성이 되어있다면,
+Knowledge graph에서는 Node, Node, edge로 구성이 되어있음
+
+
+
 # Knowledge-CLIP
 
 위에서 이야기한 CLIP의 문제점을 바탕으로 KG를 바탕으로 하는 pre-train framework를 제안한다. 
