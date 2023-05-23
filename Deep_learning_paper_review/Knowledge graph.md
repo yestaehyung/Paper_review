@@ -55,3 +55,9 @@ Khan 에서 어떻게 했을까?
 
 18개의 political-related entities, Sota NER 방식을 사용하였다. -> fashion sota가 있나...?
 
+
+Stanford NER, spaCy, NLTK, Polyglot, Flair, GATE 을 사용한다고 한다.  -> 이거를 실험을 통해서 확인을 해야한다?
+
+
+일단 NLTK 를 사용해 볼 수 있을 듯 하다
+
