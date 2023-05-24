@@ -31,6 +31,18 @@ A key diference to past work is that prior research has focused almost exclusive
 
 Explanations can also help users make decisions by highlighting why not to select something. We perform the frst study that intentionally biases explanations towards positive or negative aspects of items in a controlled manner in the context of items where we have a prior understanding of which items users should fnd most relevant. We can thus quantify the degree to which positively or negatively biased explanations lead to users choosing suboptimal recommendations.     
 -> 설명은 뭔가를 선택하고 싶지 않을 때 그러한 결정을 도와준다.     
-First study는 아이템의 negative, positive에 편향되게 설명을 한다. 
+이 논문에서 사용자가 어떤 item과 가장 관련이 있다고 생각해야 하는지에 대한 사전 이해가 있는 item의 context애서 item 긍정적 또는 부정적 측면에 대한 설명을 통제된 방식으로 의도적으로 편향시키는 첫 번째 연구를 수행합니다.   -> **조금 이해 안됨**     
+이 실험은 긍정적이거나 부정적으로 편향된 설명이 사용자가 차선의 권장 사항을 선택하는 정도를 정량화할 수 있습니다.    
+
+22 번 이전 연구에서 이야기 하였던 논문에서 영감을 받아서 수행, 그러나 negative 도 같이 본다는 것이 큰 차이점에 해당한다. 
+	"(물론 긍정적인 정서로) 리뷰에서 자주 논의되고 사용자가 추천 아이템을 즐기도록 유도할 수 있는 일련의 특성을 얻기 위해 리뷰를 처리하고 분석했습니다 " -> 22번 논문     
+	"설명의 목표는 사용자에게 item을 파는 것 뿐만 아니라, 사용자가 정보를 판단하도록 도움주는 것도 있다." -> 3번 논문     
+
+어떻게 설명이 사용자의 결정에 영향을 주는지 정량적으로 측정하는 것이 RQ1 -> 근데 설명이 positive vs negative.   
+다른 contribution은 사용자의 choices의 설명의 영향을 확인하는 정량적인 study protocol 실험 디자인을 제안하는 것도 있다.    
+
+
+
+
 
 
