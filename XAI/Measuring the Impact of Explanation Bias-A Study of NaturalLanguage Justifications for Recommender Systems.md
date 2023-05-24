@@ -62,17 +62,17 @@ XRS
 1. explanation goal 
 	1. transparency
 	2. trust
-	3. dimensions
+	3. effectiveness
 	4. persuasiveness
 2. style
 	1. content-based
 	2. collaborative-based
 	3. knowledge/utility-based
-3. scope
+3. scope -> 
 	1. user model
 	2. process
 	3. recommended item
-4. format
+4. format -> 설명의 유형
 	1. textual
 	2. visual
 
