@@ -49,9 +49,35 @@ namely list of item vs natural language text를 한다.
 이 논문에서 기여하는 것은 explainable recommender system에 디자인에 기여할 것이다.     
 
 -------
+RW
 
+XRS 
 
+이전의 연구들은 아래의 다른 관점에서 진행이 되어왔음    
 
+1. explanation goal 
+	1. transparency
+	2. trust
+	3. dimensions
+	4. persuasiveness
+2. style
+	1. content-based
+	2. collaborative-based
+	3. knowledge/utility-based
+3. scope
+	1. user model
+	2. process
+	3. recommended item
+4. format
+	1. textual
+	2. visual
+
+이것 이외에 다른 방향은 설명을 생성하는 방법에 대한 것이다.   
+- self-explainable recommender model
+- post-hoc explainations
+
+이 논문에서 접근은 content-based, post-hoc, natural language explanation generation 에 기반한다.     
+그러나 이 논문에서는 왜 item이 추천 되었는지, 
 
 
 
