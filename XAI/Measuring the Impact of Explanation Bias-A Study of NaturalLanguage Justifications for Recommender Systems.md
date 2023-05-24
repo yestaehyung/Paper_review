@@ -76,8 +76,12 @@ XRS
 - self-explainable recommender model
 - post-hoc explainations
 
-이 논문에서 접근은 content-based, post-hoc, natural language explanation generation 에 기반한다.     
-그러나 이 논문에서는 왜 item이 추천 되었는지, 
+이 논문에서 접근은 content-based, post-hoc, natural language explanation generation 에 기반한다.  what is post-hoc??     
+**그러나 이 논문에서는 왜 item이 추천 되었는지, 추가 정보(아이템의 특성과 관련된)를 사용자에게 제공하지는 않음    -> 우리 논문과 가장 차이가 나는 것**      
+
+다양한 그래프, textual적인 설염은 과거에 고려되었다, natural language 는 가장 유명한 방식, 최근에는 text-based explanation 도 있다.     
+
+이 논문에서는 두가지의 짧은 
 
 
 
