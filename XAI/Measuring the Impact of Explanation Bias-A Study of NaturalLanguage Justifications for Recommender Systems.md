@@ -81,7 +81,7 @@ XRS
 
 다양한 그래프, textual적인 설염은 과거에 고려되었다, natural language 는 가장 유명한 방식, 최근에는 text-based explanation 도 있다.     
 
-이 논문에서는 두가지의 짧은 
+이 논문에서는 두가지의 짧은 pharse를 고려한다. 
 
 
 
