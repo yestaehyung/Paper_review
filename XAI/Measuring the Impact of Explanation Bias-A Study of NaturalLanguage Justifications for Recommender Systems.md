@@ -3,6 +3,9 @@
 논문에 활용할 수 있는지, 우리가 flow를 잘 체크해서 봐야할 것 같다.
 저자가 학생이 아닌, 굉장히 추천 시스템을 많이 연구하는 사람이라서 우리가 논문을 잘 확인할 필요가 있을 것 같다.
 
+우리 논문에 들어가는 말 XRS -> eXplainable Recommender System
+
+-----
 
 CHI LBW' 23
 
@@ -40,6 +43,12 @@ Explanations can also help users make decisions by highlighting why not to selec
 
 어떻게 설명이 사용자의 결정에 영향을 주는지 정량적으로 측정하는 것이 RQ1 -> 근데 설명이 positive vs negative.   
 다른 contribution은 사용자의 choices의 설명의 영향을 확인하는 정량적인 study protocol 실험 디자인을 제안하는 것도 있다.    
+
+namely list of item vs natural language text를 한다. 
+
+이 논문에서 기여하는 것은 explainable recommender system에 디자인에 기여할 것이다.     
+
+-------
 
 
 
