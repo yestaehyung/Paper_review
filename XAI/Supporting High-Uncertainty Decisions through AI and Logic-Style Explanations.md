@@ -103,6 +103,20 @@ AI correctness
 - 사용자가 현재 주식에 할당하기로 결정한 작업이 올바른지 여부(금전적인 이익이 되는지) - 작업 성과
 - 사용자가 자신의 결정으로 AI 예측을 확인하는지 여부를 AI와 동의하는지?    
 
-Datasets
-	야후 경제에서 접근 가능한 4개의 다른 일일 주식 정보를 선택 (2017년 5월에서 2022년 8월까지)
-	모델의 정확도가 70%이상 precision, recall, f1 score과 같은 기준을 고려ㅐ해서 500개 중에서 4개를 선택함 
+Datasets    
+- 야후 경제에서 접근 가능한 4개의 다른 일일 주식 정보를 선택 (2017년 5월에서 2022년 8월까지)
+- 모델의 정확도가 70%이상 precision, recall, f1 score과 같은 기준을 고려ㅐ해서 500개 중에서 4개를 선택함
+- 5년 범위의 데이터를 가지고 모델을 학습함, 그것이 성능에 있어서 가장 적절하였고 그리고 거래 경험이 없는 경우 과거 차트에 대한 분석을 하기 힘들기 때문에, 만약 20년 이상의 데이터를 학습할 수 있는 사람이라면 그자체로 편향이 이루어진다. 그런데 너무 짧은 경우는 또 힘들다. 
+
+Classification problem
+- RF를 사용함, 다른 지표를 feature로 사용하여 4개 주식 각각에 대해 하나의 RF 모델을 학습함
+- RSI, STOCH, ADC, MACD, POC, OB, MOMU, the Daily News Sentiment Index, the Ease of Movement, the 200-day moving average
+- look-ahead bias를 피하기 위해, datasetdmf 85 / 15로 나누어서 학습을 하였다
+- 300개의 tree를 사용하였고, 각 노드의 최소 sample 수는 6개로 하였다. 
+- Recursive Feature Elimination으로 성능을 향상 시키고, feature의 수를 12개에서 5개로 줄였다. 
+	- MACD
+	- ATR
+	- EMV
+	- RSI
+	- News Sentiment
+- test set의 정확도는 71%로 다른 최신 연구와 비교하였을 때 괜찮은 성능이다. 
