@@ -120,3 +120,25 @@ Classification problem
 	- RSI
 	- News Sentiment
 - test set의 정확도는 71%로 다른 최신 연구와 비교하였을 때 괜찮은 성능이다. 
+
+Instance selection
+- AI confidence와 correctness의 조합 4가지를 선택한다
+	- low - correct
+	- low - wrong
+	- high - correct
+	- high - wrong
+- 각자의 참가자 들에게 무작위로 reasoning style을 할당한다
+- AI prediction을 계산한다. 
+- Instance를 선택하는데 있어서, 아래의 과정을 따름
+	- 1) Epistemic uncertainty만 고려하고, 0 ~ 100 범위의 confidence score로 변환해서 4개 주식에 대해 Model Agnostic confidence estimator를 사용해서 수정된 RF 모델에 대한 AI Confidence를 계산 
+	- 2) 각 주식에 대해 사분위수를 계산하고, 두번째 사분위수를 사용해서 높은 AI 신뢰도와 낮은 AI 신뢰도에 대한 임계값을 선정
+		- 두번째 사분위수 값은 57%이고 각 주식에 대해 신뢰 점수 분포는 유사함
+		- thr 보다 작으면 낮은 AI 신뢰도에 인스턴스를 할당하는 것 
+	- 3) 각 종목 별로 16개의 낮은 AI 신뢰도와 16개의 높은 AI 신뢰도 사례를 무작위로 선정함
+		- 각 세트에는 AI 가 정확한 예측을 하는 8개 사례와 AI가 틀린 8개의 사례가 포함되어 있음
+		- 최종 낮은 신뢰도는 12% ~ 55%, 높은 신뢰도는 75% ~ 90% 사이임
+
+설명 생성
+- 귀납적 설명
+	- MACEst 내부에서 K-nn 알고리즘으로 검색한 local example-based explanations를 선택함
+	- 
