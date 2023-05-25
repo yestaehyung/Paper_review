@@ -201,17 +201,27 @@ Pulsive platform2를 사용하여 주식 시장 거래 과제에 대한 온라�
 
 이전 연구에서는 설명이 참가자의 의존성을 증가시키는 역할을 한다는 것을 확인함    
 
-이 논문에서는 AI를 신뢰하는 정도가 시스템에 대해 과도하게 의존하는지 아닌지 영향을 미칠 거능성이     
+
+AI에 대한 사용자의 신뢰도는 시스템에 대해 얼마나 의존을 할지 결정하고, 이는 본 실험에서 사용자들이 어떤 정보를 확인하는지 봄으로써 파악할 수 있음    
+
+### H1: XAI 인터페이스에서 제공되는 정보에 대한 사용자의 신뢰도는 사용자의 AI 신뢰도 수준에 따라 달라진다.
+### H1a: 사용자의 AI 신뢰도가 낮을 때, 사용자는 주로 지표가 있는 차트에 의존하고, 그 다음에 설명 혹은 AI 에측에 의존한다
 
 
-### H1: XAI 인터페이스에서 제공되는 정보에 대한 사용자의 신뢰도는 AI 신뢰도 수준에 따라 달라진다.
-### H1a: AI 신뢰도가 낮을 때, 사용자는 주로 지표가 있는 차트에 의존하고, 그 다음에 설명 혹은 AI 에측에 의존한다
 
 ### H2: 사용자의 작업 성과는 AI 신뢰도와 설명 스타일 간의 상호 작용에 의해 조절이 된다.
 ### H2a: AI 신뢰도가 높을 때, abductive explain style은 inductive와 비교해서,더 높은 task preformance를 보여준다
 ### H2b: AI confidence가 높을 때, deductive explain style은 inductive와 비교해서 higher task performance를 보여준다.
 
 ### H3: 사용자의 동의는 AI correctness, AI confidence and explain style 간의 상호 작용에 의해 조정이 된다
-### H3a: AI 신뢰도가 높을 때, AI 정확성이 높다
+### H3a: AI confidence가 높을 때, AI correctness가 맞다면? abdictive explain style 은 높은 동의로 이어진다
+### H3b: AI 신뢰도가 높을 때, deductive explain style 은 AI correctness 가 맞다면, 더 높은 동의로 이어진다.
+
+---
+# Analytical Approaches
+
+For H1 (reliance), we assess the results with the Friedman test [21, 22], analyzing AI confidence values (low and high) separately to find significant differences in the factors’ distributions. We con- duct the Nemenyi posthoc analysis when we discover significant factors in the Friedman test. To assess the number of participants required to validate this hypothesis, we carried out a power analysis using G*Power3 [19]. We set the analysis for medium effects (effect size with Cohen’s d=0.16), an alpha of 0.05 and power of 0.80 for hypothesis 1. We used the Friedman test and a within-subjects de- sign, using two levels of AI confidence (low and high) on the three ranked measurements (charts with indicators, AI prediction and confidence, and explanation). The results showed that we needed a sample size of 56 people to catch medium effects.
+
+For H2 (task performance) and H3 (agreement), we used logistic regression. For H2, the model includes these factors: AI correctness (wrong, correct) and the interaction between the explanation (no- exp, inductive, abductive, deductive) and the AI confidence (low, high). For H3, we consider the interaction between the explana- tion (noexp, inductive, abductive, deductive), the AI confidence (low, high) and the AI correctness (wrong, correct) as factors. The baselines for the logistic regression factors are: “noexp” for the explanation, “low” for the AI confidence, and “wrong” for the AI correctness. For both H2 and H3, the results showed that we needed a sample size of 735 instances for medium effects (A priori 𝜒2 test with effect size d=0.16, alpha= 0.05, power=0.80, Df=15). Since each user sees four different instances (one for each Explanation Style), we divide the sample size of 735 by four, thus obtaining 184 partici- pants needed for H2 and H3, considering that for H1 56 people are sufficient.
 
 
