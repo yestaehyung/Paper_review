@@ -208,14 +208,19 @@ AI에 대한 사용자의 신뢰도는 시스템에 대해 얼마나 의존을 �
 ### H1a: 사용자의 AI 신뢰도가 낮을 때, 사용자는 주로 지표가 있는 차트에 의존하고, 그 다음에 설명 혹은 AI 에측에 의존한다
 
 
+Inductive의 경우 조금 더 생각을 해야하기 때문에 (이전의 주가가 어땠는지 분석을 해야함 한다) 더 머리를 써야한다.     
+그런데 다른 설명 두개는 그럴 필요가 없이 조금 더 해석이 줄어들고, 신뢰도만 보장이 된다면 task performance는 높을 것이다.     
 
 ### H2: 사용자의 작업 성과는 AI 신뢰도와 설명 스타일 간의 상호 작용에 의해 조절이 된다.
 ### H2a: AI 신뢰도가 높을 때, abductive explain style은 inductive와 비교해서,더 높은 task preformance를 보여준다
 ### H2b: AI confidence가 높을 때, deductive explain style은 inductive와 비교해서 higher task performance를 보여준다.
 
-### H3: 사용자의 동의는 AI correctness, AI confidence and explain style 간의 상호 작용에 의해 조정이 된다
-### H3a: AI confidence가 높을 때, AI correctness가 맞다면? abdictive explain style 은 높은 동의로 이어진다
-### H3b: AI 신뢰도가 높을 때, deductive explain style 은 AI correctness 가 맞다면, 더 높은 동의로 이어진다.
+
+AI 에 대한 사용자의 신뢰도가 높고, AI의 정확한 예측이 같이 따라오는 abductive, deductive 한 설명이 있으면, 사용자가 AI의 결과에 더 동의를 할것이다. H2와 유사한 논리를 펼침 abductive와 deductive한 방식이 ai의 에측을 사용자가 이해하게 더 만들기 쉽다. 
+
+### H3: AI에 대한 사용자의 동의는 AI correctness, AI confidence and explain style 간의 상호 작용에 의해 조정이 된다
+### H3a: AI confidence가 높을 때, AI correctness가 맞다면? abdictive explain style 은 AI에 대한  높은 동의로 이어진다
+### H3b: AI 신뢰도가 높을 때, deductive explain style 은 AI correctness 가 맞다면, AI에 대한  더 높은 동의로 이어진다.
 
 ---
 # Analytical Approaches
