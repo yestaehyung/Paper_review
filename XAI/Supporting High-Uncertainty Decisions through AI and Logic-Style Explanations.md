@@ -93,8 +93,11 @@ Deductive reasoning(연역적 추론)
 - XAI 기법이 실제 주식 거래 시나리오에서 사용자에게 어떤 영향을 미쳤는지에 대한 연구는 아직 부족함
 
 ## AI Confidence Estimation
-- 주식 시장 예측하는 작업은 불확실성이 많은 task이고, 모델의 결정을 설명하기 위해서는 AI의 신뢷
+- 주식 시장 예측하는 작업은 불확실성이 많은 task이고, 모델의 결정을 설명하기 위해서는 AI의 신뢰도가 필수적으로 작용함
+- 불확실성은 인식론과 우연론의 두가지로 분류를 할 수 있고, 이 논문에서는 인식론적 불확실성을 이야기 하고 있음
+
 ## Human Reasoning Styles
+- 
 ## Evaluating Explainable AI System
 
 # Study design
