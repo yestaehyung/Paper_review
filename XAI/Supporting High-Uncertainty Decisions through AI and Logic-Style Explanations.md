@@ -77,6 +77,15 @@ Deductive reasoning(연역적 추론)
 귀추법
 
 귀추적 추론(Abductive reasoning)은 �![a](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)를 �![b](https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3)의 설명으로 추론하는 방법이다. 이 추론의 결과로, 귀추법은 결과 �![b](https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3)로부터 전제조건 �![a](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)가 추론되도록 한다. [연역 추론](https://ko.wikipedia.org/wiki/%EC%97%B0%EC%97%AD_%EC%B6%94%EB%A1%A0 "연역 추론")과 귀추법은 "�![a](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)는 �![b](https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3)를 수반한다"라는 규칙을 이용해 추론할 때 방향이 다르다.
+
+
+# RW
+
+## XAI on stock Market Prediction
+## AI Confidence Estimation
+## Human Reasoning Styles
+## Evaluating Explainable AI System
+
 # Study design
 
 우리는 참가자들에게 사례(지표가 있는 주식 차트), AI 예측 및 예측 신뢰도(즉, AI 불확실성을 신뢰도 백분율로 표현)와 고려된 네 가지 설명 방식(설명 없음, 귀납적, 귀납적, 연역적) 중 하나를 제공하여 주식을 사고파는 결정을 내릴 것을 요청했습니다.         
