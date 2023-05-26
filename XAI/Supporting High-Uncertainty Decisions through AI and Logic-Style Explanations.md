@@ -83,9 +83,17 @@ Deductive reasoning(연역적 추론)
 
 ## XAI on stock Market Prediction
 
-
+- 주식 예측을 하는 모델은 black box이다.
+- 초보자는 주식 거래에 익숙하지 않을 수 있기 때문에 AI 예측은 이런 것을 support할 수 있음 그러나 사용자가 AI를 이해하게 하기 위해서는 AI의 결정에 대한 정보가 필요로 하고, 이것은 XAI의 필요성을 연결되게 됨
+- 주식 예측에 있어서 LIME, SHAPley라는 두가지 방식이 있음
+	- LIME
+		- 블랙박스 모델에서 선형 모델을 만들어, 데이터 샘플 입력을 교란시켜 예측을 해석
+	- SHAPley
+		- 연합 게임 이론을 활용하여, 예측에 대한 각 기능의 게여도를 계산해서 개별 예측을 설명한다. 
+- XAI 기법이 실제 주식 거래 시나리오에서 사용자에게 어떤 영향을 미쳤는지에 대한 연구는 아직 부족함
 
 ## AI Confidence Estimation
+- 주식 시장 예측하는 작업은 불확실성이 많은 task이고, 모델의 결정을 설명하기 위해서는 AI의 신뢷
 ## Human Reasoning Styles
 ## Evaluating Explainable AI System
 
@@ -147,6 +155,8 @@ Instance selection
 - 각자의 참가자 들에게 무작위로 reasoning style을 할당한다
 - AI prediction을 계산한다. 
 - Instance를 선택하는데 있어서, 아래의 과정을 따름
+	- Epistemic uncertainty -> 인식론적 불확실성
+		- 모델에 대한 지식 부족으로 인해 발생하는 불확실성, 데이터를 추가해서 막을 수 있다. 
 	- 1) Epistemic uncertainty만 고려하고, 0 ~ 100 범위의 confidence score로 변환해서 4개 주식에 대해 Model Agnostic confidence estimator를 사용해서 수정된 RF 모델에 대한 AI Confidence를 계산 
 	- 2) 각 주식에 대해 사분위수를 계산하고, 두번째 사분위수를 사용해서 높은 AI 신뢰도와 낮은 AI 신뢰도에 대한 임계값을 선정
 		- 두번째 사분위수 값은 57%이고 각 주식에 대해 신뢰 점수 분포는 유사함
