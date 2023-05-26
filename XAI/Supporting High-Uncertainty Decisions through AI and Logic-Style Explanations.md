@@ -107,8 +107,13 @@ Datasets
 - 야후 경제에서 접근 가능한 4개의 다른 일일 주식 정보를 선택 (2017년 5월에서 2022년 8월까지)
 - 모델의 정확도가 70%이상 precision, recall, f1 score과 같은 기준을 고려ㅐ해서 500개 중에서 4개를 선택함
 - 5년 범위의 데이터를 가지고 모델을 학습함, 그것이 성능에 있어서 가장 적절하였고 그리고 거래 경험이 없는 경우 과거 차트에 대한 분석을 하기 힘들기 때문에, 만약 20년 이상의 데이터를 학습할 수 있는 사람이라면 그자체로 편향이 이루어진다. 그런데 너무 짧은 경우는 또 힘들다. 
+- 시계열 데이터를 사용해서 주식 시장을 예측하는 이전의 연구와 동일하게, 데이터에 대해 exponential smoothing을 수행
+
 
 Classification problem
+- AI는 사용자에게 조언을 주게하기 위해 7일 앞의 해당 종목 가격 동향에 대해 예측을 수행해야함
+- 값이 양수이면 주가가 오르는 방식
+- 
 - RF를 사용함, 다른 지표를 feature로 사용하여 4개 주식 각각에 대해 하나의 RF 모델을 학습함
 - RSI, STOCH, ADC, MACD, POC, OB, MOMU, the Daily News Sentiment Index, the Ease of Movement, the 200-day moving average
 - look-ahead bias를 피하기 위해, datasetdmf 85 / 15로 나누어서 학습을 하였다
