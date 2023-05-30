@@ -99,4 +99,23 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 
 
 추천 시스템은 사용자가 좋아할 것만 같은 아이템을 예측하는 여러 알고리즘에 의존함     
 
-이건 문제가 될 수 있는데, 왜 
+다양한 알고리즘들이 최고의 가능한 제안을 주기 위해 노력함, 그런데 투명하지 않은 알고라즘들      
+이건 문제가 될 수 있는데, 왜 특정한 추천이 제공이 되었는지 이해가 안되면 추천에 대해 의심할 수 있게 되버린다.     
+
+그래서 아래 논문에서는 설명을 하기 위한 지표로 7가지를 제시함
+- A survey of explanations in recommender systems
+- Transparency
+- Scrutability
+- Trust
+- Effectiveness
+- Persuasiveness
+- Efficiency
+- Statisfaction
+
+설명을 하는 타입은 아래의 세가지가 있음
+- Content-based explanation
+	- We have recommended X because you liked Y 
+- Collaborate based explanation
+	- People who liked X also liked Y
+- Preference based explanation
+	- Your interests suggest that you would like X
