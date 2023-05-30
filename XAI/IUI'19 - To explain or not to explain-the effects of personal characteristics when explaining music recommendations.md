@@ -54,15 +54,32 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 
 ----
 # RW
 
+우리는 어떤 PC를 사용할지 정할 필요가 있음, fashion domain이나 인식에 있어서 가져오면 좋을 것 같음.     
+다 살펴보지는 않았지만, 우리는 실생활에 적용된다는 점에서 더 의미가 있으며, 소비자의 구매 과정? 과 같은 조금 더 패션 이커머스쪽의 PC를 찾아서 RW에 적으면 좋을 듯함     
+
 ## Personal characteristic 
 
 아직 visualisation 관련해서 개인의 특성을 본적은 있으나, 추천의 설명 관련해서 개인의 특성과 추천 시스템의 관계를 이해하려했던 논문은 없었다.      
 
 - Locus of Control (통제 위치)
 	- 사람들이 그들의 삶에서 일어나는 일들에 대해 자신들이 힘을 가지고 있다고 믿는  -> 내가 얼마나 통제할 수 있는지? 
-	- LOC test를 아래 논문에서 사용한 거로 수행함, 개인이 결과에 대해 통제할 수 있는 정도를 
+	- LOC test를 아래 논문에서 사용한 거로 수행함, 개인이 결과에 대해 인지하는 통제의 정도를 측정
+		- Generalized expectancies for internal versus external control of reinforcement
+	- 사회 심리학에서 제시한 개념, 살아오면서 자신의 영향력 밖에 있는 외력에 대항하여 사건의 결과를 스스로 통제해 왔다고 믿는 정도
+	- LOC는 이번 실험에서 중요한 역할을 하는데, 실험 시스템에서 추천 과정을 조정하는 옵션을 제공하기 떄문임
 - Need for Cognition
-- Visualisation Literacy
+	- 인식 기술은 다양한 이전 연구에서 사용이 되어왔다. 
+	- cognitive skill을 측정하는 것과 다르게, need for cognition은 개인이 노력하는 인지활동에 참여하고 즐기는 경향의 척도이다.
+	- 아래 논문에서는 NFC를 test하는 설문을 보여줌, 18개의 질문을 5-point Likert scale로 하는 것 
+		- The efficient assessment of need for cognition
+	- 여기서 NFC를 사용한 이유는 참가자들의 다양한 상황에서 플레이 리스트를 만들 떄, 인터페이스 구성 요소를 사용하려는지 그러한 의지를 확인하기 위해서임
+- Visualisation Literacy (VisLit)
+	- 이미지와 그래프의 형식으로 부터 보여지는 정보의 의미를 해석하는 능력
+	- 아래 논문에서 VisLit를 체크하는 설문을 만듦, 데이터를 변환하고 시각적 패턴을 해석하기 위해 그래프를 자신 있게 사용할 수 있는 개인의 능력을 포착하는 방식으로 설계
+	- 여기서는 특정 bar charts의 test designed 을 선택함, 왜냐하면 bar chart를 설명하는데 많이 사용하여서
 - Visual Working Memory
+	- cognitive system에 한 부분으로 더 미래의 processing을 위한 짧은 기간에 정보를 얼마나 기억할 수 있는지에 대한 것
+	- visual, verbal working memory로 될 수 있음
+	- visual working memory 는 visual information system과 상호작용할 때 cognitive load에 영향을 줄 수 있음
 - Musical Experience
 - Tech-Savvines
