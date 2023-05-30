@@ -81,5 +81,22 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 
 	- cognitive system에 한 부분으로 더 미래의 processing을 위한 짧은 기간에 정보를 얼마나 기억할 수 있는지에 대한 것
 	- visual, verbal working memory로 될 수 있음
 	- visual working memory 는 visual information system과 상호작용할 때 cognitive load에 영향을 줄 수 있음
-- Musical Experience
-- Tech-Savvines
+	- 여기 스터디에서는 visually explaining recommendations에 focus하기 때문에, visual working memory를 측정함
+	- Corsi block-tapping technique로 측정
+- Musical Experience (우리 논문에서는 Fashion Experience)
+	- 음악 경험은 음악 추천 시스템과 사용자가 어떻게 상호작용을 할지 영향을 미침
+	- Goldsmiths Musical Sophistication Index (Gold-MSI)는 사용자의 도메인 지식을 측정하는 효율적인 방식 그리고 성격과 음악선호간에 강한 코릴레이션을 보여준다.
+	- 음악 추천에 대한 이전 연구도 Gold-MSI를 PC를 측정하는데 사용하였다.
+- Tech-Savviness
+	- 여기서 정의한듯?
+	- 참가자들의 tech-savviness를 새로운 기술에 대해 시도해보려는 자신감으로 정의함
+	- internet-savviness와 같은 용어로 이전 연구에서 사용을 한적이 있었음
+		- 이런 연구는 새로운 기술을 믿고 쓰려는 것보다는 참가자의 인터넷 친숙도를 측정하려 하는 것에 집중함
+	- 참가자들이 새로운 음악 추천 인터페이스와 얼마나 잘 상호작용하는지 확인할 수 있는 중요한 요소라고 생각해서 사용함
+	- we captured tech-savviness by asking the participants to identify themselves between confident, not confident and somewhere in-between when it comes to trying new technology.
+
+## Explanations in Recommender Systems 
+
+추천 시스템은 사용자가 좋아할 것만 같은 아이템을 예측하는 여러 알고리즘에 의존함     
+
+이건 문제가 될 수 있는데, 왜 
