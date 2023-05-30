@@ -119,3 +119,5 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 
 	- People who liked X also liked Y
 - Preference based explanation
 	- Your interests suggest that you would like X
+
+Textual 
