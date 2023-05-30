@@ -41,4 +41,25 @@ However, to the best of our knowledge, 이전의 연구는 개인의 특성이 �
 - variety of cognitive skills
 - abilities related to the specific task of using music RS
 
-RQ1
+RQ1: 어떻게 개인적인 특성이 추천이 설명 될 때 user perception에 영향을 미치는 가?      
+RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction에 영향을 미치는 가?      
+
+
+결과      
+- explanations are raising the confidence of users with a low need for cognition in contrast to users with a high need for cognition.
+
+1. address the gap between the research about personal characteristics and the research about explanations in RS
+2. provide evidence that personal characteristics have a significant influence on the interaction and perception of explanations
+
+----
+# RW
+
+## Personal characteristic 
+
+- Locus of Control
+- Need for Cognition
+- Visualisation Literacy
+- Visual Working Memory
+- Musical Experience
+- Tech-Savvines
+- 
