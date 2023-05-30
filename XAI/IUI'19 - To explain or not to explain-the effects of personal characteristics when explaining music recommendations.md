@@ -22,5 +22,23 @@ Cognition에 대해 high need 인 사람들 -> 설명이 lack of confidence를 �
 
 # Introduction
 
-Each to his own: how different users call for different interaction methods in recommender systems
--> 
+Each to his own: how different users call for different interaction methods in recommender systems.    
+-> 세세한 개인적인 특성(도메인 지식)과 추천 시스템에서 선호하는 interaction 방법이 있는지 확인한 논문     
+
+음악 추천에서 개인적인 특성, controllability 의 영향이 미치는지 accptance, preceived diversity and trust 쪽에서 살펴 왔었다.     
+최근에는 사용자에게 RS의 inner process를 설명하는 연구가 있었음     
+- 현재 있는 RS는 사용자에게 투명하지 않기 때문에, 근거에 기반한 decision을 만들기 힘들다 주장함
+	- 사용자에게 visual 설명을 제공하는 Film RS를 만듦, 
+- 음악 추천 도메인에서, TasteWeights는 사용자가 좋아하는 아티스트와 추천 트렌드 아이템의 관계를 시각화하여 제공함 
+
+However, to the best of our knowledge, 이전의 연구는 개인의 특성이 미치는 영향을 조사하지는 않았다.     
+몇몇의 연구자들만이 시각화의 perception와 개인 특성의 관계를 확인했는데, 이 연구들은 RS 설명에 focus되어 있지는 않았다.     
+
+**본 연구에서는 within subject로  user study를 수행, 설명이 있고-설명이 없는 추천 시스템에 대해서 개인 특성의 영향을 확인하는 스터디임**     
+
+확인한 개인적인 특성은 
+- personality trait
+- variety of cognitive skills
+- abilities related to the specific task of using music RS
+
+RQ1
