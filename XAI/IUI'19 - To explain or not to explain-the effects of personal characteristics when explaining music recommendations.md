@@ -57,9 +57,9 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction�
 ## Personal characteristic 
 
 - Locus of Control
+	- 
 - Need for Cognition
 - Visualisation Literacy
 - Visual Working Memory
 - Musical Experience
 - Tech-Savvines
-- 
