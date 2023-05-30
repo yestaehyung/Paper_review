@@ -41,8 +41,8 @@ However, to the best of our knowledge, 이전의 연구는 개인의 특성이 �
 - variety of cognitive skills
 - abilities related to the specific task of using music RS
 
-RQ1: 어떻게 개인적인 특성이 추천이 설명 될 때 user perception에 영향을 미치는 가?      
-RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction에 영향을 미치는 가?      
+RQ1: 어떻게 개인적인 특성이 추천이 설명 될 때 user perception 에 영향을 미치는 가?      
+RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 에 영향을 미치는 가?      
 
 
 결과      
