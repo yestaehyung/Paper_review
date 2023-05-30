@@ -56,8 +56,11 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction�
 
 ## Personal characteristic 
 
-- Locus of Control
-	- 
+아직 visualisation 관련해서 개인의 특성을 본적은 있으나, 추천의 설명 관련해서 개인의 특성과 추천 시스템의 관계를 이해하려했던 논문은 없었다.      
+
+- Locus of Control (통제 위치)
+	- 사람들이 그들의 삶에서 일어나는 일들에 대해 자신들이 힘을 가지고 있다고 믿는  -> 내가 얼마나 통제할 수 있는지? 
+	- LOC test를 아래 논문에서 사용한 거로 수행함, 개인이 결과에 대해 통제할 수 있는 정도를 
 - Need for Cognition
 - Visualisation Literacy
 - Visual Working Memory
