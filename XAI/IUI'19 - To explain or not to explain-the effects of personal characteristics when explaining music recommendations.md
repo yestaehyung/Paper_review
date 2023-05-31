@@ -32,7 +32,7 @@ Each to his own: how different users call for different interaction methods in r
 - 음악 추천 도메인에서, TasteWeights는 사용자가 좋아하는 아티스트와 추천 트렌드 아이템의 관계를 시각화하여 제공함 
 
 However, to the best of our knowledge, 이전의 연구는 개인의 특성이 미치는 영향을 조사하지는 않았다.     
-몇몇의 연구자들만이 시각화의 perception와 개인 특성의 관계를 확인했는데, 이 연구들은 RS 설명에 focus되어 있지는 않았다.     
+몇몇의 연구자들만이 시각화의 perception와 개인 특성의 관계를 확인했는데, 이 연구들은 RS 설명에 focus 되어 있지는 않았다.     
 
 **본 연구에서는 within subject로  user study를 수행, 설명이 있고-설명이 없는 추천 시스템에 대해서 개인 특성의 영향을 확인하는 스터디임**     
 
