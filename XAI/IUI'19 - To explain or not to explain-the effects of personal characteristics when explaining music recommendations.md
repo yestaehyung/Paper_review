@@ -120,4 +120,5 @@ RQ2: 어떻게 개인적인 특성이 추천이 설명 될 때 user interaction 
 - Preference based explanation
 	- Your interests suggest that you would like X
 
-Textual 
+Textual 설명에 대해서는 다양한 연구가 visual적인 설명을 보고 있다.      
+Interactive visualisations 는 사용자가 이해하고, 추천이 보여지는 방법에 영향을 미치는 components를 조작할 수도 있음     
