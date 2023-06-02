@@ -126,3 +126,12 @@ Interactive visualisations 는 사용자가 이해하고, 추천이 보여지는
 PeerChooser -> 사용자에게 추천 process에 대한 visual 설명을 제공하고, input weight를 조작할 수있는 기회를 준 연구       
 Small World -> social recommender system, 추천이 되는 사용자끼리의 social connection을 node-link diagram을 사용해서 visual적으로 시각화 함      
 SFViz -> radial space-filling texhnique
+
+
+
+# Intro 정리
+
+## 연구 배경
+
+### 추천 시스템 배경
+- 
