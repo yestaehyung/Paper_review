@@ -23,3 +23,14 @@ CLIP을 학습할 때 text는 아무런 augmentation하지 않고 변하지 않�
 - masking
 이 두방법 모두 image에 비해서 text를 풍부하게 만들어 줄 수는 없는 방법이다.    
 
+GhatGPT로 text를 몇개 생성해서 llama에 학습하는 방식으로 text를 다시 생성하였다.    
+이렇게 한 이유는 데이터가 정말 많은데 가격 측면에서 문제가 있기 때문이다, 우리도 이렇게 할 수 있을 것 같다...    
+
+
+# llama 공부
+
+https://github.com/facebookresearch/llama
+
+
+
+
