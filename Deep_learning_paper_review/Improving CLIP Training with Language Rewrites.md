@@ -31,6 +31,6 @@ GhatGPT로 text를 몇개 생성해서 llama에 학습하는 방식으로 text�
 
 https://github.com/facebookresearch/llama
 
-
+우리가 어떻게 활용할 수 있을지...?       
 
 
