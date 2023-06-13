@@ -46,6 +46,13 @@ In-context learning은 어떻게 할 수 있을지??????           -> 이걸 전
 일단 면적을 사용해야한다. 면적이 가장 넒은 것이 여기의 대표 아이템이라고 할 수 있을 것 같다.    
 그런데 생각이 나는건, 추천에 대한 설명을 생성해야하는데 지금까지 논의한건 아이템에 대한 설명을 생성하려고 하는 것 같다는 생각이 든다.    
 
+Image feature 추천
+- LLama-adapter v2 multimodal를 사용해서 추천 결과를 설명한다.
+Attribute feature 추천
+- attribute 결과를 사용해서 추천을 한다. 
+
+
+
 최신 기술들  (6월 기준 아님!!!!!)     
 - GPT4ALL
 	- https://gpt4all.io/index.html
