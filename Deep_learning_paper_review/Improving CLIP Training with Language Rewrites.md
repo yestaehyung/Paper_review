@@ -55,7 +55,7 @@ In-context learning은 어떻게 할 수 있을지??????           -> 이걸 전
 - vicuna
 	- https://github.com/lm-sys/FastChat
 - alpaca
-	- 
+	- https://github.com/tatsu-lab/stanford_alpaca
 - koalpaca
 	- https://github.com/Beomi/KoAlpaca
 
