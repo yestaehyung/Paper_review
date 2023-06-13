@@ -43,6 +43,24 @@ Human factor를 어떻게 넣을 수 있을지??
 In-context learning은 어떻게 할 수 있을지??????           -> 이걸 전문가가 생성한다..????     
 추천 시스템에 llm을 어떻게 활용할 수 있을지...?????????            
 
+
+최신 기술들  (6월 기준 아님!!!!!)     
+- GPT4ALL
+	- https://gpt4all.io/index.html
+- llama
+	- https://github.com/facebookresearch/llama
+	- https://github.com/juncongmoo/pyllama
+- llama-adapter
+	- https://github.com/OpenGVLab/LLaMA-Adapter
+- vicuna
+	- https://github.com/lm-sys/FastChat
+- alpaca
+	- 
+- koalpaca
+	- https://github.com/Beomi/KoAlpaca
+
+
+
 WSDM에서 사용하는 데이터랑 우리가 사용하는 데이터가 유사하다는 것을 확인해야한다. 
 이쪽 도메인에서 많이 쓰이는 모델(성능비교) 다 가지고 온다, 
 
