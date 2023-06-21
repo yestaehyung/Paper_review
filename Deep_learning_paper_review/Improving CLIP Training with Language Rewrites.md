@@ -51,6 +51,9 @@ Image feature 추천
 Attribute feature 추천
 - attribute 결과를 사용해서 추천을 한다. 
 
+**양자화 (Quantization)**
+- 부동소수점으로 표현되는 파라미터들을 특정 비트 수로 줄이는 방법
+
 평가방법 확인하기!      
 
 성능 기준표
