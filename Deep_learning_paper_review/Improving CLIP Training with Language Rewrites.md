@@ -51,7 +51,10 @@ Image feature 추천
 Attribute feature 추천
 - attribute 결과를 사용해서 추천을 한다. 
 
+평가방법 확인하기!      
 
+성능 기준표
+- https://tatsu-lab.github.io/alpaca_eval/
 
 최신 기술들  (6월 기준 아님!!!!!)     
 - GPT4ALL
@@ -67,6 +70,10 @@ Attribute feature 추천
 	- https://github.com/tatsu-lab/stanford_alpaca
 - koalpaca
 	- https://github.com/Beomi/KoAlpaca
+- alpaca-lora
+- dolly
+- dalaiLlama
+- wizardLM
 
 
 
