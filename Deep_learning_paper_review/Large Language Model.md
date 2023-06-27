@@ -24,6 +24,9 @@
 - MPT
 	- 상업용으로 사용이 가능함
 
+transformer agent
+- Langchain을 사용하기 쉽게 만든 것 같음
+
 
 # llama
 
