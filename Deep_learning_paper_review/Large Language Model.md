@@ -77,7 +77,20 @@ llama-7b를 fin-tuning 해서 gpt-3.5와 비슷한 성능이 날 수 있도록 �
 
 # InstructGPT
 
+GPT-3를 사람이 직접 작성한 질문/대답의 데이터셋으로 추가학습을 한 것     
 
+2022년도 포스팅 보고 정리함    
+- RLHF (reinforcement learning with human feedback)이 적용됨
+
+
+# Vicuna
+
+ShareGPT의 데이터를 사용, 사람이 질문하면 GPT가 답변한 내용을 공유하는 사이트
+
+
+# WizardLM
+
+ChatGPT를 써서 자동으로 데이터셋을 생성, Evol-Instruct를 사용하였는데, self-instruct보다 복잡한 데이터를 생성할 수 있음
 
 # AutoGPT
 
