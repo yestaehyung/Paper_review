@@ -42,7 +42,7 @@ Attribute feature 추천
 상업적으로 사용가능한 것
 - https://well-chauffeur-a16.notion.site/LLM-d23b30bc16c34c03b55185dcda442eae
 
-평가방법 확인하기!      
+llama-a
 
 성능 기준표
 - https://tatsu-lab.github.io/alpaca_eval/
