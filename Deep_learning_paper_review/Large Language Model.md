@@ -74,6 +74,11 @@ https://github.com/shawwn/llama-dl
 -> GPT-3.5의 결과를 따라해서 성능을 비슷하게 만들어 버린다...    
 
 llama-7b를 fin-tuning 해서 gpt-3.5와 비슷한 성능이 날 수 있도록 함    
+
+# InstructGPT
+
+
+
 # AutoGPT
 
 AutoGPT
