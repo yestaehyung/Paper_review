@@ -44,12 +44,13 @@ Attribute feature 추천
 
 llama-adapter
 - https://arxiv.org/pdf/2303.16199.pdf
+- llama 7B 모델을 frozen 하고 1.2
 
 성능 기준표
 - https://tatsu-lab.github.io/alpaca_eval/
 
 
-
+https://github.com/shawwn/llama-dl
 
 사람의 knowledge에서 온 attribute를 잘 이야기해야할 것 같다.    
 무조건 벤치마크 하면 좋을 것 같다       
@@ -60,7 +61,7 @@ AutoGPT
 - https://github.com/Significant-Gravitas/Auto-
 - https://www.youtube.com/watch?v=CHzNNxZOIYI&t=15s
 - 경쟁사 분석 시킬 수 있을 듯
-
+
 카드 사용할 수 있게 되면 결제해서 사용하는 것이 좋을 듯 함
 
 
