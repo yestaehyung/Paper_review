@@ -10,6 +10,8 @@
 	- https://github.com/OpenGVLab/LLaMA-Adapter
 - vicuna
 	- https://github.com/lm-sys/FastChat
+- StableVicuna
+	- 13B 모델에서 가장 잘 돌아가는 것 같음
 - alpaca
 	- https://github.com/tatsu-lab/stanford_alpaca
 - koalpaca
@@ -18,6 +20,11 @@
 - dolly
 - dalaiLlama
 - wizardLM
+	- 7B 모델이 가장 잘 작동하는 것 같음
+- MPT
+	- 상업용으로 사용이 가능함
+
+
 # llama
 
 라마 유료 강의: https://fastcampus.co.kr/data_online_llama
