@@ -20,9 +20,10 @@
 - wizardLM
 # llama 공부
 
+라마 유료 강의: https://fastcampus.co.kr/data_online_llama
 https://github.com/facebookresearch/llama
 
-temperature -> 높으면 창의적인 대답 
+temperature -> 높으면 창의적인 대답, (logit / temperature) -> 이렇게 code 상에 구성이 되어있다. 
 top p -> 높으면 정확한 것을 위주로
 
 params.json -> 모델의 정보를 담고 있는 json 파일, 차원이 어떻게 되고, head 어떻게 되고, layer가 어떻게 되는지 
