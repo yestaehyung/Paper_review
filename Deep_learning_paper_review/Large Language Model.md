@@ -81,6 +81,7 @@ GPT-3를 사람이 직접 작성한 질문/대답의 데이터셋으로 추가�
 
 2022년도 포스팅 보고 정리함    
 - RLHF (reinforcement learning with human feedback)이 적용됨
+	- 1. GPT-3가 주어진 지시문대로 행동하도록 가르치기 위해
 
 
 # Vicuna
