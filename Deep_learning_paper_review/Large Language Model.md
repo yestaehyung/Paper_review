@@ -42,18 +42,14 @@ Attribute feature 추천
 상업적으로 사용가능한 것
 - https://well-chauffeur-a16.notion.site/LLM-d23b30bc16c34c03b55185dcda442eae
 
-llama-a
+llama-adapter
+- https://arxiv.org/pdf/2303.16199.pdf
 
 성능 기준표
 - https://tatsu-lab.github.io/alpaca_eval/
 
 
-WSDM에서 사용하는 데이터랑 우리가 사용하는 데이터가 유사하다는 것을 확인해야한다. 
-이쪽 도메인에서 많이 쓰이는 모델(성능비교) 다 가지고 온다, 
 
-결국에 비교 데이터셋이 짧은 데이터셋인데, llama를 써서 aug된걸 넣게 되면, 원래 짧은 텍스트를 잘 예측하게 되야하는데 이게 잘 될지 의문이 있다.      
-
-효과성을 보이는데 있어서 어떤 데이터를 택할 것인가가 중요하다.        
 
 사람의 knowledge에서 온 attribute를 잘 이야기해야할 것 같다.    
 무조건 벤치마크 하면 좋을 것 같다       
@@ -64,6 +60,8 @@ AutoGPT
 - https://github.com/Significant-Gravitas/Auto-
 - https://www.youtube.com/watch?v=CHzNNxZOIYI&t=15s
 - 경쟁사 분석 시킬 수 있을 듯
+
+카드 사용할 수 있게 되면 결제해서 사용하는 것이 좋을 듯 함
 
 
 # Langchain
