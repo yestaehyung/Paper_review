@@ -18,7 +18,7 @@
 - dolly
 - dalaiLlama
 - wizardLM
-# llama 공부
+# llama
 
 라마 유료 강의: https://fastcampus.co.kr/data_online_llama
 https://github.com/facebookresearch/llama
@@ -44,7 +44,10 @@ Attribute feature 추천
 
 llama-adapter
 - https://arxiv.org/pdf/2303.16199.pdf
-- llama 7B 모델을 frozen 하고 1.2
+- llama 7B 모델을 frozen 하고 1.2M의 파라미터만 학습한다. A100 8개로 1시간 만에 fine-tuning이 가능하다. 
+- FLAN 이라는 모델은 instruction tuning method를 소개함, non-tuned LLM을 unseen task에서 수행 가능하게 하는 방법
+- PromptSource는 web-based GUI의 개발 환경을 제공
+- InstructGPT는 instruction following power를 증명한 논문인데, GPT-3.5와 GPT-4의 성능을 따라 잡을 수 있었음 
 
 성능 기준표
 - https://tatsu-lab.github.io/alpaca_eval/
@@ -55,6 +58,12 @@ https://github.com/shawwn/llama-dl
 사람의 knowledge에서 온 attribute를 잘 이야기해야할 것 같다.    
 무조건 벤치마크 하면 좋을 것 같다       
 
+# Alpaca
+
+175개의 사람이 작성한 질문-답변 fair에서 GPT-3.5를 활용하여 52K의 학습 데이터로 확장하여 활용   
+-> GPT-3.5의 결과를 따라해서 성능을 비슷하게 만들어 버린다...    
+
+llama-7b를 fin-tuning 해서 gpt-3.5와 비슷한 성능이 날 수 있도록 함    
 # AutoGPT
 
 AutoGPT
