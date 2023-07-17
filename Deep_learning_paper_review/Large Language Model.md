@@ -109,3 +109,9 @@ LangChain
 - 다양한 prompt, model을 사용하기 쉽게 만들어 주는 역할을 한다. 
 - 용량이 큰 문서를 쪼개는 역할을 한다. 
 - Fashion 정보가 담겨있는 책을 LangChain으로 모두 chunk화 하고 chatgpt에게 물어볼 때 같이 정보를 넘긴다. 
+
+
+# LoRA
+## 배경
+- GPT-3는 Over-parametrized model 이다.
+- 모델이 학습한 일부의 정보만 가지고 와서 downstream에 사용한다.
