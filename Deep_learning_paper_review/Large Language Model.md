@@ -122,3 +122,8 @@ LangChain
 	- 노이즈를 제거하고, 부족한 정보를 채워줄수 있는 파인튜닝 모델이 필요
 - ChatGPT에게 질문을 해서 JSON을 구성한다.
 - In context learning vs fine-tuning
+
+
+# Survey
+
+- PLM과 LLM의 차이 -> LLM이 더 큰 모델,
