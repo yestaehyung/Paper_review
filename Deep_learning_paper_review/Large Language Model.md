@@ -127,3 +127,5 @@ LangChain
 # Survey
 
 - PLM과 LLM의 차이 -> LLM이 더 큰 모델,
+-  잘 수행되는 Instruct GPT [61] 및 Alpaca [124]는 Flan 시리즈 LLM [62, 64]보다 더 적지만 더 다양한 명령(또는 인스턴스)을 활용하기 때문에 인스턴스 수 [253]보다 명령의 다양성과 품질이 더 중요한 것으로 보입니다.
+- Large Language Models Encode Clinical Knowledge
