@@ -134,3 +134,5 @@ LangChain
 	- A survey for in-context learning
 	- ![](https://i.imgur.com/hSQHvSz.png)
 ## ICL vs fine-tuning?? 
+
+![](https://i.imgur.com/oy0wN8F.png)
