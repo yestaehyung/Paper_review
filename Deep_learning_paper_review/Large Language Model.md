@@ -139,3 +139,13 @@ LangChain
 
 
 https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models
+
+Instruction tuning 을 하는 것이 가능할까?
+
+내가 하려고 하는 것
+
+제품 명을 받았을 때  => 적당한 길이의 상세 설명으로 바꾸어 주는 것
+적당한 길이의 상세 설명에 이상한 정보가 포함되는 것 -> noise
+
+이걸 해서 어떻게 하려고 하는거야?
+
