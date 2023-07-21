@@ -147,6 +147,4 @@ Instruction tuning 을 하는 것이 가능할까?
 제품 명을 받았을 때  => 적당한 길이의 상세 설명으로 바꾸어 주는 것
 적당한 길이의 상세 설명에 이상한 정보가 포함되는 것 -> noise
 
-이걸 해서 어떻게 하려고 하는거야?
-
-CUDA 11.7 로 업데이트 필요, 
+https://www.sktenterprise.com/bizInsight/blogDetail/dev/4222
