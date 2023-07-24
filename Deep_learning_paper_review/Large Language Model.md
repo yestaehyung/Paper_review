@@ -154,3 +154,5 @@ Instruction tuning 을 하는 것이 가능할까?
 파인튜닝에 사용하는 프롬프트를 다양하게..? -> 그러면 instruction tuning이 더 좋은 건 아닌건지?
 
 https://www.sktenterprise.com/bizInsight/blogDetail/dev/4222
+
+
