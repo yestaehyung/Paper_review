@@ -29,3 +29,19 @@ Downstream task -> 모델의 성능 지표를 확인할 수 있음
 - decoder: context vector를 seed로 사용하여 순차적으로 출력을 생성
 
 ![400](https://i.imgur.com/C1C7J70.png)
+
+두 개의 순환신경망 구조로 이루어진 모델    
+- encoder: LSTM 모델 
+	- context vector: encoder LSTM의 마지막 time step에서의 hidden state
+- decoder: LSTM 모델
+	- context vector: 0번째 hidden state로 간주하여, 첫번째 decode LSTM의 입력이 됨 
+- ![400](https://i.imgur.com/8OcMdhi.png)
+
+Seq2Seq 모델의 단점, 문장에는 더 중요하고 덜 중요한 단어가 있는데 입력이 길어지게 되면 앞 부분의 정보가 희석이 된다는 문제가 있다.     
+어떤 단어가 중요한지 파악하는 것이 중요하다    
+
+Bahdanau attention을 추가하여 문제를 완화할 수 있음     
+디코더에 문맥 벡터를 추가한다.  (어떤 벡터를 중요하게 봐야하는지 학습할 수 있다.)
+![400](https://i.imgur.com/Rk5ADPi.png)
+
+![](https://i.imgur.com/Gilqk2r.png)
