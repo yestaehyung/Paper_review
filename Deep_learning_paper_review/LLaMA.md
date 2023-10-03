@@ -1,3 +1,8 @@
+---
+banner: https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80
+banner_y:
+banner_icon: 🌠
+---
 # NLP
 - Language Model
 	- 나열된 단어들의 조합에 확률을 부여하는 모델
