@@ -1,5 +1,4 @@
 # NLP
-
 - Language Model
 	- 나열된 단어들의 조합에 확률을 부여하는 모델
 - Natural Language Understanding
