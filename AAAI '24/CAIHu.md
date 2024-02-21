@@ -35,5 +35,23 @@ speaker:  https://scholar.google.com/citations?user=V4OPEAgAAAAJ&hl=en&oi=ao
 ![](https://i.imgur.com/rCcRkJp.png)
 
 
+![](https://i.imgur.com/QDYM77m.png)
+![](https://i.imgur.com/H7r23PI.png)
+
+코드 생성 제안을 reject하는 시간이 많았다 
+
+![](https://i.imgur.com/3hXFdov.png)
 
 
+![](https://i.imgur.com/xgnPYyY.png)
+
+![](https://i.imgur.com/825cKX6.png)
+![](https://i.imgur.com/VzcgrWL.png)
+![](https://i.imgur.com/HK9q7U2.png)
+![](https://i.imgur.com/1UrSpYd.png)
+![](https://i.imgur.com/Yj2TMrS.png)
+![](https://i.imgur.com/rfBzwkT.png)
+![](https://i.imgur.com/8knV3Us.png)
+![](https://i.imgur.com/6kGjX8v.png)
+![](https://i.imgur.com/eqXIXvn.png)
+![](https://i.imgur.com/rfhRdU0.png)
