@@ -55,3 +55,14 @@ speaker:  https://scholar.google.com/citations?user=V4OPEAgAAAAJ&hl=en&oi=ao
 ![](https://i.imgur.com/6kGjX8v.png)
 ![](https://i.imgur.com/eqXIXvn.png)
 ![](https://i.imgur.com/rfhRdU0.png)
+
+
+지속가능성...
+
+# AI-Driven Personalization to Support Human-AI Collaboration
+https://www.cs.ubc.ca/people/cristina-conati
+
+![](https://i.imgur.com/USe5Sw0.png)
+
+![](https://i.imgur.com/NijqY7q.png)
+![](https://i.imgur.com/LjWZqy5.png)
