@@ -80,9 +80,21 @@ https://www.cs.ubc.ca/people/cristina-conati
 ![](https://i.imgur.com/Z81XvsI.png)
 ![](https://i.imgur.com/T0JeSKX.png)
 ![](https://i.imgur.com/MfNkKCM.png)
-![Uploading file...tn80l]()
-![Uploading file...72o09]()
-![Uploading file...cdmtj]()
-![Uploading file...mvarl]()
-![Uploading file...8hko0]()
-![Uploading file...pof8a]()
+![](https://i.imgur.com/sQmkOR1.png)
+![](https://i.imgur.com/ExBB3RU.png)
+![](https://i.imgur.com/uSe74pK.png)
+![](https://i.imgur.com/Regfj8X.png)
+![](https://i.imgur.com/xAb4gZX.png)
+![](https://i.imgur.com/W69GMzN.png)
+
+![[Pasted image 20240221101747.png]]<!--⚠️Imgur upload failed, check dev console-->
+![Uploading file...9jzpu]()
+![[Pasted image 20240221101925.png]]<!--⚠️Imgur upload failed, check dev console-->
+![](https://i.imgur.com/vAsH2AT.png)
+
+![](https://i.imgur.com/rSIUbzt.png)
+![](https://i.imgur.com/gePcZRD.png)
+
+
+
+![](https://i.imgur.com/gnZdZSk.png)
