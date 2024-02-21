@@ -86,8 +86,7 @@ https://www.cs.ubc.ca/people/cristina-conati
 ![](https://i.imgur.com/Regfj8X.png)
 ![](https://i.imgur.com/xAb4gZX.png)
 ![](https://i.imgur.com/W69GMzN.png)
-
-![[Pasted image 20240221101747.png]]<!--⚠️Imgur upload failed, check dev console-->
+![](https://i.imgur.com/7lZtEDI.png)
 
 ![](https://i.imgur.com/vAsH2AT.png)
 
