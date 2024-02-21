@@ -88,8 +88,7 @@ https://www.cs.ubc.ca/people/cristina-conati
 ![](https://i.imgur.com/W69GMzN.png)
 
 ![[Pasted image 20240221101747.png]]<!--⚠️Imgur upload failed, check dev console-->
-![Uploading file...9jzpu]()
-![[Pasted image 20240221101925.png]]<!--⚠️Imgur upload failed, check dev console-->
+
 ![](https://i.imgur.com/vAsH2AT.png)
 
 ![](https://i.imgur.com/rSIUbzt.png)
@@ -98,3 +97,5 @@ https://www.cs.ubc.ca/people/cristina-conati
 
 
 ![](https://i.imgur.com/gnZdZSk.png)
+
+![](https://i.imgur.com/5n6pLU2.png)
