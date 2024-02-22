@@ -15,3 +15,34 @@ https://underline.io/events/439/sessions/16791/lecture/92088-effect-size-estimat
 ![](https://i.imgur.com/g1lSdFm.png)
 
 ![](https://i.imgur.com/Hw4phWe.png)
+
+![](https://i.imgur.com/wgdWHYl.png)
+
+![](https://i.imgur.com/7YG0dzc.png)
+
+![](https://i.imgur.com/B7c6EHZ.png)
+
+![](https://i.imgur.com/Jm7LMKW.png)
+
+![](https://i.imgur.com/YeGjIvb.png)
+
+![](https://i.imgur.com/VuCrBJj.png)
+
+![](https://i.imgur.com/o8GoWAC.png)
+
+![](https://i.imgur.com/hfEivtF.png)
+
+![](https://i.imgur.com/kuri3gD.png)
+
+![](https://i.imgur.com/fMtTLqi.png)
+
+![](https://i.imgur.com/bDDMHKX.png)
+
+![](https://i.imgur.com/HBZPQOB.png)
+
+![](https://i.imgur.com/0Ml19FS.png)
+
+<!--⚠️Imgur upload failed, check dev console-->
+
+
+![[Pasted image 20240222095946.png]]
