@@ -48,3 +48,7 @@ https://underline.io/events/439/sessions/16791/lecture/92088-effect-size-estimat
 
 IAAI 논문들 확인하기 -> 목요일 오전 9시 반에서 10시 45분까지 했던 것 
 
+## NLP 1
+
+![](https://i.imgur.com/KfZqAAf.png)
+
