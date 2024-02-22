@@ -44,5 +44,6 @@ https://underline.io/events/439/sessions/16791/lecture/92088-effect-size-estimat
 
 <!--⚠️Imgur upload failed, check dev console-->
 
-
 ![[Pasted image 20240222095946.png]]
+
+IAAI 논문들 확인하기 -> 목요일 오전 9시 반에서 10시 45분까지 했던 것 
