@@ -75,3 +75,19 @@
 
 <!--⚠️Imgur upload failed, check dev console-->
 ![[Pasted image 20240222175643.png]]
+
+---
+
+
+![](https://i.imgur.com/0LasslG.png)
+
+![](https://i.imgur.com/BUfXGJJ.png)
+
+![](https://i.imgur.com/zJmkR41.png)
+
+![](https://i.imgur.com/ymQ71IJ.png)
+
+![](https://i.imgur.com/PWig30C.png)
+![](https://i.imgur.com/DtuFqsi.png)
+![](https://i.imgur.com/x23jHtG.png)
+![](https://i.imgur.com/BiuugKD.png)
