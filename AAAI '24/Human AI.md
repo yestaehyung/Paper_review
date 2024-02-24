@@ -62,4 +62,11 @@
 ![[Pasted image 20240223161827.png]]
 
 
-![Uploading file...r441i]()
+<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20240223161901.png]]<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20240223161956.png]]
+<!--⚠️Imgur upload failed, check dev console-->
+![[스크린샷 2024-02-23 오후 4.21.06.png]]
+<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20240223162119.png]]<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20240223162303.png]]
