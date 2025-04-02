@@ -2,7 +2,7 @@
 title: Globem 평가 논문 검색
 source: https://chatgpt.com/c/67ec91dc-e258-800a-9966-0f4d6fd86a17
 author:
-  - "[[ARR Review plan]]"
+  - "[[ARR plan]]"
 published: 
 created: 2025-04-02
 description: ChatGPT conversation with 4 turns
