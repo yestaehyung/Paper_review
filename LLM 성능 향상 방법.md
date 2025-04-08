@@ -9,37 +9,62 @@ description: "ChatGPT conversation with 10 turns"
 tags:
   - "clippings"
 ---
+## ChatGPT
+
+LLM에게 특정 무언가를 refine 하여 정확도나, 성공률 같은 지표를 향상시키는 방법론이나 이것을 활용한 논문을 찾을 수 있을까?
+
+---
+
+## ChatGPT
+
+LLM의 어떤 측면을 refine하고자 하시는 건가요? 예를 들어 특정 태스크의 성능(예: 요약, 번역, 질의응답), 도메인 적합성, 추론 능력 향상 등 어떤 측면의 정확도나 성공률을 높이고 싶으신지 알려주시면 관련된 방법론이나 논문을 더 정확하게 찾아드릴 수 있어요.
+
+---
+
+## ChatGPT
+
+LLM이 생성한 것에 대해서 refine 하는 것을 찾고 싶어, LLM을 개선하는 것이 아니야 예를 들어서 프로필을 만든다고 하면, LLM이 생성한 프로필에 대해, LLM이 프로필을 다시 보고 이게 정말 맞는 것인지 개선하는 거지 LLM은 chatgpt와 같으거면 좋을 것 같고, 최신 뉴립스 논문이면 좋을 것 같아
+
+---
+
+## ChatGPT
+
+좋아요. NeurIPS(뉴립스) 최신 논문 중에서, ChatGPT나 유사한 LLM이 생성한 아웃풋(예: 프로필, 설명 등)을 다시 검토하고 개선(refinement)하여 정확도나 성공률을 높이는 방법론에 관한 연구를 찾아볼게요. 논문에는 가능한 한 구체적인 방법과 정량적 지표 향상 결과가 포함된 것을 우선할게요. 조금만 기다려 주세요, 곧 결과를 정리해서 알려드릴게요.
+
+## Refinement Methods for Improving LLM Outputs (NeurIPS 2023–2024)
+
+The table below summarizes several recent research papers (mostly NeurIPS) that propose **refinement approaches** for LLM-generated outputs, along with their methods and performance gains:
+
+| **Paper** | **Authors (Year)** | **Refinement Approach** | **Key Outcomes** |
+| --- | --- | --- | --- |
+| **Self-Refine: Iterative Refinement with Self-Feedback** | Aman Madaan *et al.* (NeurIPS 2023) | Uses the same LLM to generate an initial output, then have the LLM itself provide feedback on that output and iteratively refine it – all at test-time, with no additional training or supervised data required [^1]. | Across 7 diverse tasks (dialog generation, math reasoning, etc.), this method improved performance by **~20% (absolute)** on average over one-shot generation, with refined outputs preferred by both automatic metrics and human evaluators [^2]. |
+| **Reflexion: Language Agents with Verbal Reinforcement Learning** | Noah Shinn *et al.* (NeurIPS 2023) | Introduces *Reflexion*, where an agent doesn’t update its weights but **verbally self-reflects** on feedback. The LLM agent converts feedback signals (e.g. error messages or critique) into a textual reflection stored in memory, and conditions future outputs on this memory to iteratively improve decisions [^3]. | Achieved **significant improvements** across reasoning, decision-making, and coding tasks. For example, on the HumanEval code benchmark it reached **91% pass@1 accuracy**, outperforming GPT-4 (which achieved ~80%) [^4]. |
+| **LeDex: Training LLMs to Better Self-Debug and Explain Code** | Nan Jiang *et al.* (NeurIPS 2024) | Proposes a training framework for code generation where the model **iteratively debugs its code**. LeDex automatically builds a dataset of code “explanations and refinements” by generating multiple explanation-and-fix trajectories (using the LLM itself or a larger teacher) and filtering them via execution results [^5]. The model is then fine-tuned on these successful and failed refinement trajectories (with a specially designed reward for good explanations and fixes), and further optimized with RL. | This approach markedly improved code correctness: supervised fine-tuning alone boosted the code pass@1 rate by up to **+15.9%** (and pass@10 by +9.3%) across several benchmarks, and an additional RL fine-tuning stage added up to **+3.5%** more on pass@1 (and +2.5% on pass@10) [^6]. The resulting LLM can continuously refine its code and produces more helpful explanations of bugs (as confirmed by human evaluation) [^6]. |
+| **SLED: Self Logits Evolution Decoding for Improving Factuality in LLMs** | Jianyi Zhang *et al.* (NeurIPS 2024) | Introduces a novel **decoding-time refinement** method to improve factual accuracy. SLED leverages the model’s *latent knowledge* by contrasting the final-layer output logits with the logits from earlier transformer layers, and then applying an approximate gradient-based adjustment to **self-refine** the output in real-time [^7]. This guides the generation to be more consistent with facts the model *does* know internally, without any external knowledge or fine-tuning. | **Consistently improves factual accuracy** (truthfulness of outputs) by up to **20%** compared to standard decoding methods, while maintaining fluent language quality [^8]. Notably, SLED operates with negligible added latency and can be combined with other decoding strategies for further gains [^8]. |
+| **Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing (AlphaLLM)** | Ye Tian *et al.* (NeurIPS 2024) | Proposes **AlphaLLM**, which integrates a Monte Carlo Tree Search (MCTS) loop with an LLM for complex reasoning tasks. The LLM “imagines” possible solution steps, uses MCTS to **search** multiple reasoning trajectories, and employs a set of critic models to **critique** and score these trajectories [^9]. High-scoring solutions are then used to update the LLM’s own responses (in a self-improvement loop) – all without additional human-provided annotations. | Demonstrated **substantial performance gains** on mathematical reasoning benchmarks. For instance, starting from a strong 70B model (~73.7% accuracy on GSM8K math problems), AlphaLLM’s search-and-refine loop boosted accuracy to **88.9%**, and after two self-improvement iterations it reached **~92%**, **rivaling GPT-4’s performance** on the same task [^10]. Similar improvements were observed on other math tasks (e.g. more than doubling accuracy on the MATH dataset) [^10]. |
+| **Code Repair with LLMs Gives an Exploration-Exploitation Tradeoff (REx)** | Hao Tang *et al.* (NeurIPS 2024) | Focuses on **iterative code refinement** using feedback from test cases. The authors frame the process as a **bandit problem**: at each step, the algorithm must decide whether to *exploit* the current best partial solution or *explore* a different solution path [^11]. They introduce **REx**, which uses Thompson Sampling to adaptively choose which generated program to refine next, rather than always picking the last or best one. This balances exploration vs. exploitation in the refinement search tree of code edits. | REx solves **more programming problems with fewer LLM calls** compared to greedy or breadth-first refinement strategies [^12]. It achieved new **state-of-the-art results** in several challenging code generation domains (such as loop invariant synthesis, visual reasoning puzzles, and competition-level programming tasks) [^13], indicating a more efficient and effective refinement strategy. |
+| **LLM Self-Correction with DeCRIM (Decompose, Critique, and Refine)** | Thomas P. Ferraz *et al.* (NeurIPS 2024 Workshop) | Targets **instruction-following with multiple constraints** (e.g. “write a post in a *funny* tone *without* using hashtags”). The DeCRIM pipeline first **decomposes** a complex instruction into a checklist of individual constraints. A separate *Critic* model then evaluates the LLM’s output to see if any constraint is violated and pinpoints where [^14]. The LLM subsequently attempts to **refine** its answer to fix those specific issues, iterating as needed. | On the new RealInstruct benchmark of real user queries with multiple constraints, DeCRIM boosted an open-source model’s success rate by **+7.3%** (and by +8.0% on a related IFEval benchmark) even with only weak automated feedback [^15]. With stronger feedback signals, a DeCRIM-augmented LLM was able to **exceed GPT-4’s performance** on following complex constrained instructions [^15], substantially closing the gap between open models and proprietary ones in this setting. |
+
+---
+
+## ChatGPT
+
+근데 이런 방법론을 사용자의 프로필을 생성할 때 어떻게 사용할 수 있을까
+
+---
+
+## ChatGPT
+
+사용자 프로필을 생성할 때 위의 논문들에서 사용된 **refinement(개선)** 방법론을 실제로 어떻게 적용할 수 있는지에 대해 구체적으로 설명해 드릴게요.
+
+---
+
 ## 📌 1. Self-Refine (자기 피드백을 통한 프로필 정제)
 
-- 동기
-	- 아무리 뛰어난 모델이라도, 한 번에 완벽한 답을 내놓지 못하거나, 여러 조건/목표를 만족시키지 못하는 경우가 빈번함
-	- 논문에서는 사람이 글을 쓰는 과정을 비유로 제시, 사람이 이메일을 작성하거나 코드를 구현할 때, '초안'을 먼저 작성한 뒤 스스로 반성/피드백을 통해 수정하고 개선하는 과정을 거친다는 점에 주목함
-	- 스스로 피드백을 주고, 그 피드백을 반영하여 출력을 고쳐나가는 과정을 모델에 적용하자는 관점임
 - **방법론:**
 	- LLM이 초기에 사용자의 리뷰나 행동 데이터를 기반으로 프로필 초안을 생성.
 	- 동일한 LLM에게 생성된 프로필을 다시 입력으로 주고, 스스로에게 "이 프로필이 사용자의 특성을 충분히 반영하는가?" 등 자기 비판적 질문을 던지게 함.
 	- 이 피드백을 바탕으로 프로필을 단계적으로 refine.
-	- 구성 요소
-		- 초기 생성
-			- 입력에 대해 모델이 1차 초안을 생성
-		- 피드백
-			- 모델이 스스로 자신이 생성한 출력을 살펴보고, 여러 측면에 대한 피드백을 작성함
-		- 개선
-			- 같은 모델이 "초안" + "피드백"을 입력으로 받아, 피드백을 반영해 출력을 새롭게 고침
-		- 반복
-			- 위의 과정을 반복하면서, 모델이 스스로 피드백 -> 개선 -> 다시 피드백을 반복 ...
-- 본 논문에서는 긍정/부정 전환 작업을 위해서 리뷰 데이터를 기반으로 실험
-	- 리뷰를 한두 문장 수준이 아닌 더 긴 단락형태로 다루어, 기준 문장 단위의 감정 전환보다 난이도가 높은 문제로 설정함
-	- 선택된 리뷰 각각이 이미 긍정 혹은 부정 레이블을 가지고 있으며, 이 텍스트를 반대 감정으로 뒤집도록 모델을 테스트
-	- Self-Refine 적용 방식
-		- 리뷰를 입력으로 해서, 우선 모델이 초기 전환 결과를 생성(원래 부정 리뷰 -> 1차 긍정 버전)
-		- 그 다음 모델이 스스로 해당 전환 결과에 대해 어떤 부분이 아직 부정적 느낌인지, 더 극적인 어휘로 바꿔야하는지와 같이 구체적인 피드백을 작성
-		- 마지막으로 이 피드백을 바탕으로 모델이 출력을 다시 수정/개선하는 과정을 반복하여, 보다 자연스럽게 감정이 반전된 텍스트를 얻도록 함
-- 드는 생각
-	- 동기 부분을 self-refine 하는 것이랑 연결 할 수 있을 것 같은데
-	- 이전에 사용자의 선호도 프로필? 혹은 그냥 프로필을 만들 때 사람이 한번에 작성하는 것이 아니라, 여러번 데이터를 확인하면서 작성을 해야한다는 식으로? 근데 이것을 사회 과학하고 어떻게 연결 할 수 있을지?
-		- 사회과학 전문가가 어떻게 사용자의 프로필을 구성할 수 있을지에 대한 연구 탐색 중
-	- 개인화된 작업에서 어떻게 self-refine을 사용해 왔는지 찾는 중
 - **예시 시나리오:**
 	```
 	rustInitial Profile: 
@@ -58,16 +83,6 @@ tags:
 - **방법론:**
 	- LLM이 생성한 프로필의 한계나 문제점을 식별하는 “반성적(reflective)” 문장을 LLM이 스스로 작성하여 메모리에 저장.
 	- 이후 프로필을 업데이트할 때마다 메모리에 저장된 반성적 피드백을 고려하여 반복적으로 프로필을 개선.
-	- 구성 요소
-		- Actor
-			- LLM이 실질적으로 행동하고 사고를 만들어 내는 부분
-		- Evaluator
-			- Actor가 낸 결과물을 토대로 보상을 부여하거나, 점수를 매기는 역할
-		- Self-Reflection
-			- 최종적으로 에이전트가 얻은 보상이나 실패 원인을 분석해, "왜 실패했는지", "어떻게 고칠 수 있는지" 등을 텍스트 형태로 요약
-			- 생성된 반성 요약문을 에이전트의 장기 메모리에 저장해, 새로운 시도를 할 때 actor가 꺼내서 볼 수 있도록 함 
-- 내가 가지고 있는 생각
-	- 메모리가 필요로 하기 때문에 MAPLE에서는 사용하기 힘들 수 있을 것 같음
 - **예시 시나리오:**
 	```
 	javaInitial Profile: 
@@ -80,6 +95,64 @@ tags:
 - **장점:**
 	- 사용자 프로필이 더욱 다차원적이고 사회적 특성을 포함할 수 있음.
 
+---
+
+## 📌 3. SLED (내부 지식 대비를 통한 정확성 향상)
+
+- **방법론:**
+	- LLM이 특정 사용자에 대한 프로필을 생성할 때, 최상위 레이어에서 출력된 결과(logits)를 중간 레이어의 정보(logits)와 비교하여 일관되지 않은 부분을 자체적으로 식별하고 수정하여 보다 정확한 프로필 생성.
+- **예시 시나리오:**
+	```
+	sqlInitial Profile: 
+	"User loves luxury travel and high-end restaurants."
+	내부 지식 대비 (LLM 중간층 분석):
+	"중간층에서 발견된 사용자의 선호 데이터는 높은 소비 성향보다는 현지의 소박한 경험을 더 선호하는 경향이 있음."
+	Refined Profile:
+	"User enjoys authentic local experiences and appreciates restaurants offering genuine local cuisine rather than high-end establishments."
+	```
+- **장점:**
+	- 사용자의 실제 데이터와 내부적으로 일관된 프로필 생성 가능.
+
+---
+
+## 📌 4. DeCRIM (복잡한 지침 분해 및 조건 확인을 통한 프로필 개선)
+
+- **방법론:**
+	- 사용자 프로필 생성 시 만족해야 하는 조건(예: personality, social traits, explicit preferences)을 별도 항목으로 분리하고, 각 조건을 LLM이 개별적으로 평가하여 충족 여부를 판단하고 수정하는 방식.
+- **예시 시나리오:**
+	```
+	javaInitial Profile:
+	"User enjoys nightlife."
+	Decomposition & Critique:
+	- Explicit preference(nightlife): ✔️
+	- Personality trait(extraversion): ❌ 부족
+	- Social trait(group interactions): ❌ 명확하지 않음
+	Refined Profile:
+	"User enjoys nightlife, showing clear extraversion by actively engaging in large-group social gatherings and vibrant social scenes."
+	```
+- **장점:**
+	- 프로필의 완성도와 조건 충족 여부가 명확해짐.
+
+---
+
+## 📌 5. AlphaLLM / REx (탐색과 평가를 통한 최적의 프로필 찾기)
+
+- **방법론:**
+	- 프로필 생성 시 여러 후보 프로필을 탐색한 후, 각 프로필의 정확성이나 만족도를 평가하여 최적의 프로필을 찾고 반복적으로 개선.
+- **예시 시나리오:**
+	```
+	vbnetGenerated candidate profiles:
+	A:"User prefers adventure tourism and nature photography."B:"User prefers cultural experiences and city exploration."
+	평가(LLM이 자체 평가 수행):
+	- A는 사용자의 리뷰 데이터에 더 정확히 부합함 (점수 0.85)
+	- B는 부분적으로만 일치 (점수 0.55)
+	최적의 프로필 선택 및 개선:
+	"User prefers adventure tourism, actively engages in nature photography, and shows secondary interest in exploring local cultures in rural regions."
+	```
+- **장점:**
+	- 프로필 정확도와 적합도를 최대화할 수 있음.
+
+---
 
 ## ✅ 각 방법의 활용성 평가 및 추천
 
@@ -90,6 +163,23 @@ tags:
 | SLED | 내부 지식 기반 신뢰성 향상 | 프로필 정확성이 특히 중요한 경우 |
 | DeCRIM | 조건 충족 여부를 정확히 확인 가능 | 명확한 프로필 생성 기준이 있을 때 |
 | AlphaLLM / REx | 탐색적 접근으로 최적 프로필 발굴 가능 | 많은 후보 중 최적 프로필을 찾아야 할 때 |
+
+---
+
+이러한 최신 논문들의 refinement 접근법은 사용자의 프로필 정확도와 성공률을 효과적으로 높일 수 있는 유망한 방법입니다. 사용자의 데이터 특성, 프로필의 복잡성 및 정확도 기준에 따라 가장 적합한 접근법을 선택하여 활용하면 됩니다.
+
+---
+
+## ChatGPT
+
+1번과 2번에 대해서 더 구체적인 시나리오를 생각해 볼까? 사용자 프로필을 암시적 선호도, 성격, 활동성 이 세가지로 구성한다고 할 때 어떻게 하는게 좋을까?
+
+---
+
+## ChatGPT
+
+좋습니다. 아래에 말씀하신 세 가지 구성요소( **암시적 선호도, 성격, 활동성** )를 중심으로,  
+위에서 소개한 두 가지 접근법( **Self-Refine** 과 **Reflexion** )을 프로필 생성에 보다 구체적으로 적용하는 시나리오를 만들어 드리겠습니다.
 
 ---
 
